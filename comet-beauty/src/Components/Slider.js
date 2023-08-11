@@ -1,9 +1,11 @@
 import React from 'react';
+import "../Style/Slider.css";
 
 function Slider() {
   return(
-    <h3>Slider</h3>
-          
+    <div className='slider-container'>
+      <h3>Slider</h3>
+    </div>
   )
 }
 
