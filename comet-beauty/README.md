@@ -1,5 +1,6 @@
 ## CMD
 ### `npm install react-icons`
+### `npm install react-bootstrap bootstrap`
 
 # Getting Started with Create React App
 
