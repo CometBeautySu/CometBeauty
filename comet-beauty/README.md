@@ -1,6 +1,8 @@
 ## CMD
 ### `npm install react-icons`
 ### `npm install react-bootstrap bootstrap`
+### `npm install --save-dev babel-plugin-styled-components`
+### `npm add styled-components.macro --dev`
 
 # Getting Started with Create React App
 

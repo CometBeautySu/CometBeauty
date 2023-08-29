@@ -1,17 +1,13 @@
-import './App.css';
-import React from 'react';
-import Navbar from './Components/Navbar';
-import Slider from './Components/Slider';
-import Footer from './Components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
+import Navbar from './components/Navbar'
+import GlobalStyle from './globalStyles';
 
 function App() {
   return (
-    <React.Fragment>
-      <Navbar/>
-      <Slider/>
-      <Footer/>
-    </React.Fragment>
+    <>
+      <GlobalStyle />
+      <Navbar />
+    </>
   );
 }
 
