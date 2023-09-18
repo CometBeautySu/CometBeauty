@@ -4,6 +4,8 @@ import GlobalStyle from './globalStyles';
 import ImageSlider from './components/ImageSlider';
 import { SliderData } from './data/SliderData';
 import Dropdown from './components/Dropdown';
+import InforSection from './components/InforSection';
+import { InfoData } from './data/InfoData';
 
 function App() {
   // func for menu bar
@@ -19,6 +21,7 @@ function App() {
       <Navbar toggle={toggle}/>
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <ImageSlider slides={SliderData}/>
+      <InforSection {...InfoData}/>
     </>
   );
 }
