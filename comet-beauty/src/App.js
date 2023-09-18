@@ -6,6 +6,7 @@ import { SliderData } from './data/SliderData';
 import Dropdown from './components/Dropdown';
 import InforSection from './components/InforSection';
 import { InfoData } from './data/InfoData';
+import Listing from './components/Listing';
 
 function App() {
   // func for menu bar
@@ -22,6 +23,7 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <ImageSlider slides={SliderData}/>
       <InforSection {...InfoData}/>
+      <Listing />
     </>
   );
 }
