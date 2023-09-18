@@ -8,6 +8,7 @@ import InforSection from './components/InforSection';
 import { InfoData } from './data/InfoData';
 import Listing from './components/Listing';
 import Features from './components/Features';
+import Footer from './components/Footer';
 
 function App() {
   // func for menu bar
@@ -26,6 +27,8 @@ function App() {
       <InforSection {...InfoData}/>
       <Listing />
       <Features />
+      <InforSection {...InfoData}/>
+      <Footer />
     </>
   );
 }
