@@ -1,6 +1,6 @@
-import React from 'react'
-import styled, {css} from 'styled-components'
-import {Link} from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import styled, { css } from 'styled-components'
+import { Link, useLocation } from 'react-router-dom'
 import { menuData } from '../data/MenuData'
 import { Button } from './Button'
 import Bars from '../images/bars.svg';
@@ -72,8 +72,38 @@ const NavBtn = styled.div`
 `
 
 const Navbar = ({ toggle }) => {
+  // change navbar background
+  const [navbar, setNavbar] = useState(false)
+  const location = useLocation()
+
+  const changeBackground = () => {
+    // check if scroll down
+    if (window.pageYOffset >= 60) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+
+  useEffect(() => {
+    const watchScroll = () => {
+      window.addEventListener('scroll', changeBackground)
+    }
+
+    watchScroll()
+
+    return () => {
+      window.removeEventListener('scroll', changeBackground)
+    }
+  }, [])
+
+  let style = {
+    background: navbar || location.pathname !== "/" ? '#CD853F' : 'transparent',
+    transition: '0.4s'
+  }
+
   return (
-    <Nav>
+    <Nav style={style}>
       <Logo to="/">Comet Beauty</Logo>
       <MenuBars onClick={toggle}/>
       <NavMenu>
