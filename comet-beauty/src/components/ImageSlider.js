@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import { Button } from './Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const SliderSection = styled.section`
   height: 100vh;
@@ -56,7 +57,7 @@ const Slider = styled.div`
   }
 `
 
-const SliderImage = styled.img`
+const SliderImage = styled(motion.img)`
   position: absolute;
   top: 0;
   left: 0;
@@ -174,32 +175,48 @@ const ImageSlider = ({ slides }) => {
     return null
   }
 
+  const fadeAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.8 } },
+    exit: { opacity: 0 }
+  }
+
   return (
     <SliderSection>
       <SlidderWrapper>
-        {slides.map((slide, index) => {
-          return ( // pass index to get specific image data
-            <Slide key={index}>
-              {index === current && (
-                <Slider>
-                <SliderImage src={slide.image} alt={slide.alt}/>
-                <SliderContent>
-                  <h1>{slide.title}</h1>
-                  <p>{slide.price}</p>
-                  <Button 
-                    to={slide.path} 
-                    primary='true'
-                    css={`max-width: 160px;`}
-                  >
-                    {slide.label}
-                    <Arrow />
-                  </Button>
-                </SliderContent>
-              </Slider>
-              )}
-            </Slide>
-          )
-        })}
+        <AnimatePresence>
+          {slides.map((slide, index) => {
+            return ( // pass index to get specific image data
+              <Slide key={index}>
+                {index === current && (
+                  <Slider>
+                  <SliderImage src={slide.image} alt={slide.alt}
+                  initial='hidden'
+                  animate='visible'
+                  exit='exit'
+                  variants={fadeAnimation}
+                  />
+                  <SliderContent>
+                    <h1 data-aos='fade-down' data-aos-duration='600'>{slide.title}</h1>
+                    <p data-aos='fade-down' data-aos-duration='600' data-aos-delay='200'>{slide.price}</p>
+                    <Button 
+                      data-aos='zoom-out' 
+                      data-aos-duration='500'
+                      data-aos-delay='250'
+                      to={slide.path} 
+                      primary='true'
+                      css={`max-width: 160px;`}
+                    >
+                      {slide.label}
+                      <Arrow />
+                    </Button>
+                  </SliderContent>
+                </Slider>
+                )}
+              </Slide>
+            )
+          })}
+        </AnimatePresence>
         <SlidderButtons>
           <PrevArrow onClick={prevSlide} />
           <NextArrow onClick={nextSlide} />

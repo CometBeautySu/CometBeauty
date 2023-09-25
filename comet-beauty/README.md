@@ -3,6 +3,8 @@
 ### `npm install react-bootstrap bootstrap`
 ### `npm install --save-dev babel-plugin-styled-components`
 ### `npm add styled-components.macro --dev`
+### `npm install framer-motion`
+### `npm install aos`
 
 # Getting Started with Create React App
 

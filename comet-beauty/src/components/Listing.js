@@ -82,10 +82,20 @@ const Listing = () => {
     <ListingSection>
       <Container>
         <Heading>
-          <h1>View out newest products</h1>
+          <h1
+            data-aos='fade-right'
+            data-aos-duration='1000'
+            data-aos-once='true'
+            data-aos-anchor-placement='center bottom'
+          >View out newest products</h1>
         </Heading>
         <InfoRow>
-          <InfoWrap>
+          <InfoWrap
+            data-aos='zoom-out-up'
+            data-aos-duration='1200'
+            data-aos-once='true'
+            data-aos-anchor-placement='center bottom'
+          >
             <Image src={HomeOne} alt="home" />
             <h2>1212121</h2>
             <InfoLink to="/homes">
@@ -93,7 +103,12 @@ const Listing = () => {
               <Arrow />
             </InfoLink>
           </InfoWrap>
-          <InfoWrap>
+          <InfoWrap
+            data-aos='zoom-out-down'
+            data-aos-duration='1200'
+            data-aos-once='true'
+            data-aos-anchor-placement='center bottom'
+          >
             <Image src={HomeTwo} alt="home" css={`
               margin-top: 120px;
               @media screen and (max-width: 768px) {
