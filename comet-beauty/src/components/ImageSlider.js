@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const SliderSection = styled.section`
   height: 100vh;
-  max-height: 1100px;
+  max-height: 650px;
   pisition: relative;
   overflow: hidden;
 `

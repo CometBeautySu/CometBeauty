@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components/macro'
-import { Button } from './Button'
+import { Button } from '../Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'

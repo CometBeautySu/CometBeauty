@@ -8,9 +8,9 @@ const CardSection = styled.li`
   margin: 0 1rem;
   border-radius: 10px;
 
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 2rem;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   margin-bottom: 2rem;
+  // }
 `
 
 const CardItemLink = styled(Link)`
@@ -23,6 +23,7 @@ const CardItemLink = styled(Link)`
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  margin-bottom: 2rem;
 `
 
 const CardItemPicWrap = styled.figure`
@@ -86,16 +87,16 @@ const CardItemInfo = styled.div`
   }
 `
 
-function CardItem(props) {
+const CardItem = (props) => {
   return (
     <>
       <CardSection>
-        <CardItemLink to={props.path }>
+        <CardItemLink to={props.path}>
           <CardItemPicWrap data-category={props.label}>
             <CardImage src={props.scr} alt="Images"/>
           </CardItemPicWrap>
           <CardItemInfo>
-            <h5>{props.text}</h5>
+            <h5>{props.title}</h5>
             <h6>{props.detail}</h6>
           </CardItemInfo>
         </CardItemLink>

@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useLayoutEffect } from 'react'
-import Navbar from './components/Navbar'
 import GlobalStyle from './globalStyles';
 import Dropdown from './components/Dropdown';
-import Footer from './components/Footer';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages';
 import About from './pages/About';
@@ -11,6 +9,8 @@ import Rentals from './pages/Rentals';
 import Contact from './pages/Contact';
 import Aos from 'aos'
 import 'aos/dist/aos.css' // Animate on scroll library
+import Footer from './components/NavbarAndFooter/Footer';
+import Navbar from './components/NavbarAndFooter/Navbar';
 
 function App() {
   // func for menu bar

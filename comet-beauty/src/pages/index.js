@@ -1,21 +1,23 @@
 import React from 'react'
 import ImageSlider from '../components/ImageSlider'
 import { SliderData } from '../data/SliderData'
-import InforSection from '../components/InforSection'
+import InforSection from '../components/AboutUs/InforSection'
 import { InfoData, InfoDataTwo } from '../data/InfoData'
 import Listing from '../components/Listing'
 import Features from '../components/Features'
-import Cards from '../components/Cards'
+import Cards from '../components/Services/Cards'
+import { ServiceData } from '../data/ServiceData'
+import AboutUs from '../components/AboutUs/AboutUs'
 
 const Home = () => {
   return (
     <>
       <ImageSlider slides={SliderData}/>
-      {/* <InforSection {...InfoData}/> */}
-      {/* <Listing />
-      <Features /> */}
-      {/* <InforSection {...InfoDataTwo}/> */}
-      <Cards />
+      <Cards service={ServiceData}/>
+      <AboutUs/>
+      {/* {<Listing /> } */}
+      {/* {<Features />} */}
+      
     </>
   )
 }

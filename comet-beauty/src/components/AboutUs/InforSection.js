@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { Button } from './Button'
+import { Button } from '../Button'
 
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  padding: 4rem 0rem;
+  h1 {
+    text-align: center;
+  }
 `
 const Container = styled.div`
-  padding: 3rem calc((100vw - 1300px) / 2);
+  padding: 2rem calc((100vw - 1300px) / 2);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 800px;
+  grid-template-rows: 500px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -27,12 +29,16 @@ const ColumnLeft = styled.div`
   order: ${({reverse}) => (reverse ? '2' : '1')};
 
   h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
   p {
     margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
   }
 `
 
@@ -69,15 +75,16 @@ const InforSection = ({
   delay
 }) => {
   return (
+    <>
     <Section>
       <Container>
         <ColumnLeft
           reverse={reverse}
-          data-aos='fade-up'
-          data-aod-duration='1000'
-          data-aos-once='true'
-          data-aos-delay={delay}
-          data-aos-anchor-placement='center bottom'
+          // data-aos='fade-up'
+          // data-aod-duration='1000'
+          // data-aos-once='true'
+          // data-aos-delay={delay}
+          // data-aos-anchor-placement='center bottom'
         >
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
@@ -86,15 +93,16 @@ const InforSection = ({
         </ColumnLeft>
         <ColumnRight reverse={reverse}>
           <img src={image} alt='home' 
-            data-aos='zoom-out'
-            data-aod-duration='1000'
-            data-aos-once='true'
-            data-aos-delay={delay}
-            data-aos-anchor-placement='center bottom'
+            // data-aos='zoom-out'
+            // data-aod-duration='1000'
+            // data-aos-once='true'
+            // data-aos-delay={delay}
+            // data-aos-anchor-placement='center bottom'
           />
         </ColumnRight>
       </Container>
     </Section>
+    </>
   )
 }
 
