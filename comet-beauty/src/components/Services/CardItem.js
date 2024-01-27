@@ -90,7 +90,13 @@ const CardItemInfo = styled.div`
 const CardItem = (props) => {
   return (
     <>
-      <CardSection>
+      <CardSection
+        data-aos='zoom-out'
+        data-aod-duration='1000'
+        data-aos-once='true'
+        data-aos-delay='300'
+        data-aos-anchor-placement='center bottom'
+      >
         <CardItemLink to={props.path}>
           <CardItemPicWrap data-category={props.label}>
             <CardImage src={props.scr} alt="Images"/>

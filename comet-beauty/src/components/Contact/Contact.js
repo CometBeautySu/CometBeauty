@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from './Button'
-import ImageOne from '../images/image1.jpg'
+import { Button } from '../Button'
+import ImageOne from '../../images/image1.jpg'
 
 const Sections = styled.section`
   background: #000d1a;
@@ -51,21 +51,21 @@ const Content = styled.div`
 `
 
 const ColumnRight = styled.div`
-position: absolute;
-top: -80px;
-right: 0;
-max-width: 850px;
-height: 140%;
-width: 45%;
-padding-left: 1rem;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  max-width: 850px;
+  height: 140%;
+  width: 45%;
+  padding-left: 1rem;
 
-@media screen and (max-width: 768px) {
-  height: 320px;
-  top: -65px;
-  width: 80%;
-  margin: 0 auto;
-  left: 0;
-}
+  @media screen and (max-width: 768px) {
+    height: 320px;
+    top: -65px;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+  }
 `
 
 const Image = styled.img`
@@ -87,12 +87,15 @@ const Features = () => {
             data-aos-once='true'
             data-aos-anchor-placement='center bottom'
           >
-            <h1>Welcome to my new home</h1>
+            <h1>Welcome to contact us!</h1>
             <p>
-              uhfuhdjkharwehflkdhna
+              WX:
             </p>
             <p>
-              iojeuiwohfhnrhsngflk
+              小红书：
+            </p>
+            <p>
+              ins:
             </p>
             <Button to="/homes">Learn More</Button>
           </Content>

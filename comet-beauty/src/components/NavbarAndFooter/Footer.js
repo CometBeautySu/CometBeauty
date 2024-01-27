@@ -9,8 +9,8 @@ const Section = styled.section`
   background: #000d1a;
   color: #fff;
   width: 100%;
-  min-height: 600px;
-  padding: 3rem calc((100vw - 1300px) / 2);
+  min-height: 100px;
+  padding: 1rem calc((100vw - 1300px) / 2);
 `
 
 const Container = styled.div`
@@ -56,7 +56,6 @@ const FooterInfo = styled.div`
 
 const FooterBottom = styled.div`
   display: flex;
-  padding: 2rem 0rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

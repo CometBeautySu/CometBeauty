@@ -3,14 +3,15 @@ import GlobalStyle from './globalStyles';
 import Dropdown from './components/Dropdown';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages';
-import About from './pages/About';
-import Homes from './pages/Homes';
-import Rentals from './pages/Rentals';
-import Contact from './pages/Contact';
+import AboutPage from './pages/AboutPage';
+import Homes from './pages/ServicePage';
 import Aos from 'aos'
 import 'aos/dist/aos.css' // Animate on scroll library
 import Footer from './components/NavbarAndFooter/Footer';
 import Navbar from './components/NavbarAndFooter/Navbar';
+import Contact from './pages/ContactPage';
+import ServicePage from './pages/ServicePage';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   // func for menu bar
@@ -38,9 +39,9 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/about' exact element={<About />} />
-        <Route path='/homes' exact element={< Homes/>} />
-        <Route path='/rentals' exact element={<Rentals />} />
+        <Route path='/about' exact element={<AboutPage />} />
+        <Route path='/services' exact element={< ServicePage />} />
+        <Route path='/gallery' exact element={<GalleryPage />} />
         <Route path='/contact' exact element={<Contact />} />
       </Routes>
       <Footer />

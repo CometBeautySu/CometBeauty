@@ -21,7 +21,7 @@ export const ServiceData = [
         detail: "本店提供美甲美睫纹绣等美容服务",
         path: "/about",
         label: "Body",
-        image: ImageOne,
+        image: ImageTwo,
         alt: "美体"
     },
     {
@@ -29,7 +29,7 @@ export const ServiceData = [
         detail: "本店提供美甲美睫纹绣等美容服务",
         path: "/about",
         label: "MakeUp",
-        image: ImageOne,
+        image: ImageThree,
         alt: "化妆"
     },
     {
@@ -37,7 +37,7 @@ export const ServiceData = [
         detail: "本店提供美甲美睫纹绣等美容服务",
         path: "/about",
         label: "Facial",
-        image: ImageOne,
+        image: ImageFour,
         alt: "美容"
     },
     {

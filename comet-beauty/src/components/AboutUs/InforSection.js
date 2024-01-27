@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button'
 
@@ -80,11 +80,11 @@ const InforSection = ({
       <Container>
         <ColumnLeft
           reverse={reverse}
-          // data-aos='fade-up'
-          // data-aod-duration='1000'
-          // data-aos-once='true'
-          // data-aos-delay={delay}
-          // data-aos-anchor-placement='center bottom'
+          data-aos='fade-up'
+          data-aod-duration='1000'
+          data-aos-once='true'
+          data-aos-delay={delay}
+          data-aos-anchor-placement='center bottom'
         >
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
@@ -93,11 +93,11 @@ const InforSection = ({
         </ColumnLeft>
         <ColumnRight reverse={reverse}>
           <img src={image} alt='home' 
-            // data-aos='zoom-out'
-            // data-aod-duration='1000'
-            // data-aos-once='true'
-            // data-aos-delay={delay}
-            // data-aos-anchor-placement='center bottom'
+            data-aos='zoom-out'
+            data-aod-duration='1000'
+            data-aos-once='true'
+            data-aos-delay={delay}
+            data-aos-anchor-placement='center bottom'
           />
         </ColumnRight>
       </Container>

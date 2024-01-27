@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { InfoData, InfoDataTwo } from "../../data/InfoData";
+import { InfoData, InfoDataThree, InfoDataTwo } from "../../data/InfoData";
 import InforSection from "./InforSection";
 
 const Section = styled.section`
@@ -18,6 +18,7 @@ const AboutUs = () => {
         <Section><h1>About Us</h1></Section>
         <InforSection {...InfoData} />
         <InforSection {...InfoDataTwo}/>
+        <InforSection {...InfoDataThree}/>
         </>
     )
 }

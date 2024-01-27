@@ -1,5 +1,5 @@
 import React from 'react'
-import Features from '../components/Features'
+import Features from '../components/Contact/Contact'
 
 const Contact = () => {
   return (

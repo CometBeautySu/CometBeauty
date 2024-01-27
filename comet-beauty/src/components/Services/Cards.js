@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const CardsSection = styled.div`
   padding: 2rem;
   background: #fff;
-  margin-top: 30px;
+  margin-top: 0px;
 
   h1 {
     text-align: center;
