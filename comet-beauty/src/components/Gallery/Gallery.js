@@ -45,7 +45,7 @@ const StyledButton = styled(Button)`
     &:active {
         background-color: #CD853F;
     }
-`;
+`
 
 const Gallery = ( props ) => {
 
