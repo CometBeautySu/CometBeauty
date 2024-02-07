@@ -7,34 +7,34 @@ import ImageFour from '../images/image4.jpg'
 
 export const SliderData = [
     {
-        title: "Board",
-        price: "$40,000",
+        title: "Welcome\nTo\nComet Beauty",
+        price: "We are here for your everymoods",
         path: "/homes",
-        label: "View Home",
+        label: "Contact Us",
         image: ImageOne,
         alt: "house"
     },
     {
-        title: "Bread",
-        price: "$40,000",
+        title: "Welcome\nTo\nComet Beauty",
+        price: "We are here for your everymoods",
         path: "/homes",
-        label: "View Home",
+        label: "Contact Us",
         image: ImageTwo,
         alt: "house"
     },
     {
-        title: "Cut",
-        price: "$40,000",
+        title: "Welcome\nTo\nComet Beauty",
+        price: "We are here for your everymoods",
         path: "/homes",
-        label: "View Home",
+        label: "Contact Us",
         image: ImageThree,
         alt: "house"
     },
     {
-        title: "Banana",
-        price: "$40,000",
+        title: "Welcome\nTo\nComet Beauty",
+        price: "We are here for your everymoods",
         path: "/homes",
-        label: "View Home",
+        label: "Contact Us",
         image: ImageFour,
         alt: "house"
     },

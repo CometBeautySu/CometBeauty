@@ -71,9 +71,10 @@ const SliderContent = styled.div`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  max-widrh: 1600px;
+  max-width: 1600px;
   width: calc(100% - 100px);
   color: #fff;
+  
 
   h1 {
     // (smallest size of the font,
@@ -85,6 +86,7 @@ const SliderContent = styled.div`
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: left;
     margin-bottom: 0.8rem;
+    white-space: pre-line;
   }
 
   p {

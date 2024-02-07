@@ -23,6 +23,8 @@ const MembershipWrapper = styled.div`
     width: 90%;
 
     h3 {
+        font-family: "Courier New", "Courier New", monospace;
+
         text-align: center;
         margin: 2rem;
         font-size: clamp(1rem, 3vw, 3rem);
