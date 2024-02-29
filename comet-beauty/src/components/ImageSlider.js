@@ -7,9 +7,13 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const SliderSection = styled.section`
   height: 100vh;
-  max-height: 650px;
+  // max-height: 650px;
   pisition: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 650px) {
+    height: 100vh;
+  }
 `
 
 const SlidderWrapper = styled.div`
@@ -64,6 +68,7 @@ const SliderImage = styled(motion.img)`
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  object-position: 10% 20%;
 `
 
 const SliderContent = styled.div`
@@ -80,8 +85,8 @@ const SliderContent = styled.div`
     // (smallest size of the font,
     // 8 view port is smallest font based on ur screen,
     // 2rem is the largest font size)
-    font-size: clamp(1rem, 8vw, 200rem); 
-    font-weight: 400;
+    font-size: clamp(1rem, 7vw, 200rem); 
+    font-weight: 300;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: left;
@@ -120,7 +125,7 @@ const arrowButtons = css`
   transition: 0.3s;
 
   &:hover {
-    background: #cd853f;
+    background: #1B4242;
     transform: scale(1.05);
   }
 `
@@ -145,7 +150,7 @@ const ImageSlider = ({ slides }) => {
       setCurrent(current => (current === length - 1 ? 0 : current + 1))
     }
 
-    timeout.current = setTimeout(nextSlide, 3000)
+    // timeout.current = setTimeout(nextSlide, 3000)
 
     return function() {
       if (timeout.current) {

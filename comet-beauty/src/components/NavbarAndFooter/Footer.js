@@ -76,7 +76,7 @@ const SocialIcons = styled.div`
 const Icons = css`
   font-size: clamp(1rem, 6vw, 2rem);
   margin-right: 1.5rem;
-  color: #cd853f;
+  color: #1B4242;
 `
 
 const Instagram = styled(FaInstagram)`

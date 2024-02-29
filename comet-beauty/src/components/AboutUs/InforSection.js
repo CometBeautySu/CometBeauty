@@ -78,6 +78,15 @@ const InforSection = ({
     <>
     <Section>
       <Container>
+      <ColumnRight reverse={reverse}>
+          <img src={image} alt='home' 
+            data-aos='zoom-out'
+            data-aod-duration='1000'
+            data-aos-once='true'
+            data-aos-delay={delay}
+            data-aos-anchor-placement='center bottom'
+          />
+        </ColumnRight>
         <ColumnLeft
           reverse={reverse}
           data-aos='fade-up'
@@ -91,15 +100,6 @@ const InforSection = ({
           <p>{paragraphTwo}</p>
           <Button to='/homes' primary='true'>{buttonLabel}</Button>
         </ColumnLeft>
-        <ColumnRight reverse={reverse}>
-          <img src={image} alt='home' 
-            data-aos='zoom-out'
-            data-aod-duration='1000'
-            data-aos-once='true'
-            data-aos-delay={delay}
-            data-aos-anchor-placement='center bottom'
-          />
-        </ColumnRight>
       </Container>
     </Section>
     </>

@@ -43,7 +43,7 @@ const GalleryItems = styled.div`
 const StyledButton = styled(Button)`
     &:hover,
     &:active {
-        background-color: #CD853F;
+        background-color: #1B4242;
     }
 `
 

@@ -51,7 +51,7 @@ const MembershipTable = styled.table`
     }
 
     th {
-        background-color: #CD853F; /* Optional: Add background color for header cells */
+        background-color: #1B4242; /* Optional: Add background color for header cells */
     }
 
     td:first-child {

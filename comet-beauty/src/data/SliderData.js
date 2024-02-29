@@ -2,17 +2,18 @@ import ImageOne from '../images/image1.jpg'
 import ImageTwo from '../images/image2.jpg'
 import ImageThree from '../images/image3.jpg'
 import ImageFour from '../images/image4.jpg'
-// import ImageOne from '../images/image6.jpg'
+import Wedding2 from '../images/wedding2.jpg'
+import Wedding3 from '../images/wedding3.jpg'
 
 
 export const SliderData = [
     {
-        title: "Welcome\nTo\nComet Beauty",
+        title: "Susu\nBeauty",
         price: "We are here for your everymoods",
         path: "/homes",
         label: "Contact Us",
-        image: ImageOne,
-        alt: "house"
+        image: Wedding3,
+        alt: "susu beauty"
     },
     {
         title: "Welcome\nTo\nComet Beauty",
