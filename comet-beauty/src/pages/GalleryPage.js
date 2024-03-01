@@ -1,6 +1,6 @@
 import React from 'react'
 import Gallery from '../components/Gallery/Gallery'
-import { ServiceData } from '../data/ServiceData'
+import { ServiceData } from '../assets/data/ServiceData'
 
 const GalleryPage = () => {
   return (

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 import { Link, useLocation } from 'react-router-dom'
-import { menuData } from '../../data/MenuData'
-import Bars from '../../images/bars.svg';
+import { menuData } from '../../assets/data/MenuData'
+import Bars from '../../assets/images/bars.svg';
 import { Button } from '../Button';
 
 const Nav = styled.nav`

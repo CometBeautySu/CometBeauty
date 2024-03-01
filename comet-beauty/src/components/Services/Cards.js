@@ -2,13 +2,30 @@ import React from 'react'
 import CardItem from './CardItem'
 import styled from 'styled-components'
 
+
 const CardsSection = styled.div`
   padding: 2rem;
   background: #fff;
   margin-top: 0px;
 
+  // @font-face {
+  //   font-family: "Titillium";
+  //   src: url("assets/TitilliumWeb-Black.ttf") format("truetype");
+  // }
+
   h1 {
     text-align: center;
+    margin-top: 2vh;
+    font-size: 3em;
+    // font-family:Titillium;
+  }
+
+  p {
+    color: #888888;
+    text-align: center;
+    margin-top: 1vh;
+    // font-family:Titillium;
+    font-size: 1.3em;
   }
 `
 
@@ -39,8 +56,15 @@ const Cards = ( props ) => {
 
   return (
     <>
-      <CardsSection>
+      <CardsSection
+        // data-aos='zoom-out'
+        // data-aod-duration='1000'
+        // data-aos-once='true'
+        // data-aos-delay='300'
+        // data-aos-anchor-placement='center bottom'
+      >
         <h1>Our Services</h1>
+        <p>Explore more services</p>
         <CardsContainer>
           <CardsWrapper>
             <CardsItems>

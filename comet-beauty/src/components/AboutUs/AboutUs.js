@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { InfoData, InfoDataThree, InfoDataTwo } from "../../data/InfoData";
+import { InfoData, InfoDataThree, InfoDataTwo } from "../../assets/data/InfoData";
 import InforSection from "./InforSection";
 
 const Section = styled.section`

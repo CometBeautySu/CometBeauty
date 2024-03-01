@@ -69,6 +69,11 @@ const SliderImage = styled(motion.img)`
   height: 100vh;
   object-fit: cover;
   object-position: 10% 20%;
+
+  @media screen and (max-width: 650px) {
+    height: 100vh;
+    object-position: 30% 20%;
+  }
 `
 
 const SliderContent = styled.div`
