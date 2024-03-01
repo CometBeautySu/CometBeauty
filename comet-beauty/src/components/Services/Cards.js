@@ -8,16 +8,13 @@ const CardsSection = styled.div`
   background: #fff;
   margin-top: 0px;
 
-  // @font-face {
-  //   font-family: "Titillium";
-  //   src: url("assets/TitilliumWeb-Black.ttf") format("truetype");
-  // }
-
   h1 {
     text-align: center;
     margin-top: 2vh;
-    font-size: 3em;
-    // font-family:Titillium;
+    font-size: clamp(1.5rem, 4vw, 200rem); 
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
   }
 
   p {
@@ -25,7 +22,8 @@ const CardsSection = styled.div`
     text-align: center;
     margin-top: 1vh;
     // font-family:Titillium;
-    font-size: 1.3em;
+    // font-size: 4rem;
+    font-size: clamp(1.2em, 2vw, 4rem);
   }
 `
 
@@ -76,8 +74,9 @@ const Cards = ( props ) => {
                   // path={item.path}
                   label={item.label}
                   scr={item.image}
-                  alt={item.alt}>
-                  </CardItem>
+                  alt={item.alt}
+                  artist={item.artist}>
+                </CardItem>
               ))}
             </CardsItems>
             <CardsItems>

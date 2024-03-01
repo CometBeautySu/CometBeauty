@@ -31,20 +31,6 @@ const CardItemPicWrap = styled.figure`
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
-
-  &::after {
-    content: attr(data-category);
-    position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
-  }
 `
 
 // const FafeImage = styled.img`
@@ -64,6 +50,7 @@ const CardImage = styled.img`
   height: 100%;
   max-height: 100%;
   object-fit: cover;
+  object-position: 0% 20%;
   transition: all 0.2s linear;
 
   &:hover {
@@ -76,14 +63,21 @@ const CardItemInfo = styled.div`
   
   h5 {
     color: #252e48;
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
+    font-size: clamp(0.5rem, 4vw, 1.5rem); 
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    margin-bottom: 0.8rem;
   }
 
-  h6 {
+  p {
     color: #252e48;
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: left;
+    margin: 5px 0 0 0;
   }
 `
 
@@ -91,19 +85,20 @@ const CardItem = (props) => {
   return (
     <>
       <CardSection
-        data-aos='zoom-out'
-        data-aod-duration='1000'
-        data-aos-once='true'
-        data-aos-delay='300'
-        data-aos-anchor-placement='center bottom'
+        // data-aos='zoom-out'
+        // data-aod-duration='1000'
+        // data-aos-once='true'
+        // data-aos-delay='300'
+        // data-aos-anchor-placement='center bottom'
       >
         <CardItemLink to={props.path}>
-          <CardItemPicWrap data-category={props.label}>
+          <CardItemPicWrap>
             <CardImage src={props.scr} alt="Images"/>
           </CardItemPicWrap>
           <CardItemInfo>
             <h5>{props.title}</h5>
-            <h6>{props.detail}</h6>
+            <p>{props.detail}</p>
+            {/* <p>By: {props.artist}</p> */}
           </CardItemInfo>
         </CardItemLink>
       </CardSection>

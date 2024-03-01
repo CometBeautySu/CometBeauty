@@ -1,53 +1,53 @@
-import ImageOne from '../images/image1.jpg'
-import ImageTwo from '../images/image2.jpg'
-import ImageThree from '../images/image3.jpg'
-import ImageFour from '../images/image4.jpg'
-// import ImageOne from '../images/image6.jpg'
+import { nail, massage, bridal_makeup, eyebrow } from "../images";
 
 
 export const ServiceData = [
     {
         id: 1,
-        title: "美容(美甲 / 美睫 / 纹绣)",
-        detail: "本店提供美甲美睫纹绣等美容服务",
-        path: "/about",
+        title: "Nail / Eyelash Extension",
+        detail: "Explore glamour in our Beauty Series, featuring expert services in nail art and stunning eyelash enhancements.",
+        artist: "Susu",
+        path: "/services",
         label: "Facial",
-        image: ImageOne,
-        alt: "美容"
+        image: nail,
+        alt: "beauty"
     },    
     {
         id: 2,
-        title: "美体(经络疏通 / 祛毛)",
-        detail: "本店提供美甲美睫纹绣等美容服务",
-        path: "/about",
+        title: "Meridians Therapy / Hair Removal",
+        detail: "Revitalize with meridian clearing. Achieve smooth skin with effective hair removal.",
+        artist: "Lifang Su",
+        path: "/services",
         label: "Body",
-        image: ImageTwo,
+        image: massage,
         alt: "美体"
     },
     {
-        title: "妆造(婚礼跟妆 / 写真)",
-        detail: "本店提供美甲美睫纹绣等美容服务",
-        path: "/about",
+        title: "Bridal Makeup / Portrait",
+        detail: "Elevate your wedding day with flawless bridal makeup and captivating photography moments.",
+        artist: "Susu",
+        path: "/services",
         label: "MakeUp",
-        image: ImageThree,
+        image: bridal_makeup,
         alt: "化妆"
     },
     {
-        title: "纹绣(纹眉 / 纹眼线)",
-        detail: "本店提供美甲美睫纹绣等美容服务",
-        path: "/about",
+        title: "Eyebrow / Eyeliner Microblading",
+        detail: "Experience the art of permanent makeup, including microblading and eyeliner tattooing for enhanced beauty.",
+        artist: "Zoe Su",
+        path: "/services",
         label: "Facial",
-        image: ImageFour,
+        image: eyebrow,
         alt: "美容"
     },
-    {
-        title: "祛毛",
-        detail: "本店提供美甲美睫纹绣等美容服务",
-        path: "/about",
-        label: "Facial",
-        image: ImageOne,
-        alt: "美体"
-    }
+    // {
+    //     title: "祛毛",
+    //     detail: "本店提供美甲美睫纹绣等美容服务",
+    //     path: "/about",
+    //     label: "Facial",
+    //     image: ImageOne,
+    //     alt: "美体"
+    // }
 ];
 
 // export const SliderDataTwo = [
