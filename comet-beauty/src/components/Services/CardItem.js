@@ -72,7 +72,7 @@ const CardItemInfo = styled.div`
     margin-bottom: 0.8rem;
   }
 
-  p {
+  h7 {
     color: #252e48;
     font-size: 15px;
     line-height: 27px;
@@ -97,7 +97,7 @@ const CardItem = (props) => {
           </CardItemPicWrap>
           <CardItemInfo>
             <h5>{props.title}</h5>
-            <p>{props.detail}</p>
+            <h7>{props.detail}</h7>
             {/* <p>By: {props.artist}</p> */}
           </CardItemInfo>
         </CardItemLink>

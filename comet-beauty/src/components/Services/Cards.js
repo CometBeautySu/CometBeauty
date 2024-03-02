@@ -21,8 +21,6 @@ const CardsSection = styled.div`
     color: #888888;
     text-align: center;
     margin-top: 1vh;
-    // font-family:Titillium;
-    // font-size: 4rem;
     font-size: clamp(1.2em, 2vw, 4rem);
   }
 `

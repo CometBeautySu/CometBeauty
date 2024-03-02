@@ -13,8 +13,8 @@ const Home = () => {
       <ImageSlider slides={SliderData}/>
       <Cards service={ServiceData}/>
       <AboutUs/>
-      <Gallery service={ServiceData}/>
-      <Contact />
+      {/* <Gallery service={ServiceData}/> */}
+      {/* <Contact /> */}
     </>
   )
 }

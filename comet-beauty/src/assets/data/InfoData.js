@@ -1,34 +1,32 @@
-import ImageOne from '../images/image6.jpg'
-import ImageTwo from '../images/image2.jpg'
-import Susu from '../images/susu.jpg'
+import { susu, zoe } from "../images";
 
 
 export const InfoData = {
   heading: "Susu",
-  paragraphOne: "毛戈平学员",
-  paragraphTwo: "My name is Rachel and I'm a licensed makeup artist & esthetician. I specialize in bridal and special events makeup in the Rochester, NY area and I absolutely love this little corner of the world!",
+  paragraphOne: "Makeup Artist",
+  paragraphTwo: "My name is Susu and I'm a licensed makeup artist & esthetician. I specialize in bridal and special events makeup in the Rochester, NY area and I absolutely love this little corner of the world!",
   buttonLabel: "View more",
-  image: Susu,
+  image: susu,
   reverse: true, // image on the left or right
   delay: 100
 }
 
 export const InfoDataTwo = {
   heading: "Lifang Su",
-  paragraphOne: "中医经络理疗",
-  paragraphTwo: "美体师",
+  paragraphOne: "Traditional Chinese Medicine Meridian Therapist",
+  paragraphTwo: "Harmonizing energy flow, a skilled Traditional Chinese Medicine Meridian Therapist fosters holistic wellness through ancient techniques.",
   buttonLabel: "View more",
-  image: ImageTwo,
+  image: susu,
   reverse: false, // image on the left or right
   delay: 300
 }
 
 export const InfoDataThree = {
   heading: "Zoey Su",
-  paragraphOne: "自制款服装，纹绣",
-  paragraphTwo: "纹绣师",
+  paragraphOne: "Micropigmentation Artist",
+  paragraphTwo: "Passionate micropigmentation artist specializing in enhancing natural beauty through meticulous and artistic cosmetic tattooing techniques.",
   buttonLabel: "View more",
-  image: ImageTwo,
+  image: zoe,
   reverse: true, // image on the left or right
   delay: 300
 }
