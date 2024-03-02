@@ -5,6 +5,7 @@ import eyebrow from './eyebrow_microblading.jpg';
 import plant from './plant.jpg';
 import zoe from './zoe.jpg';
 import susu from './susu.jpg';
+import xiaohongshu from './xiaohongshu.svg';
 
 export {
     bridal_makeup,
@@ -14,4 +15,5 @@ export {
     plant,
     zoe,
     susu,
+    xiaohongshu,
 }

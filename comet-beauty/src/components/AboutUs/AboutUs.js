@@ -26,7 +26,13 @@ const Section = styled.div`
 const AboutUs = () => {
     return (
         <>
-          <Section>
+          <Section
+            data-aos='zoom-out'
+            data-aod-duration='1000'
+            data-aos-once='true'
+            data-aos-delay={300}
+            data-aos-anchor-placement='center bottom'
+          >
             <h1>About Us</h1>
             <p>Meet our teams</p>
           </Section>

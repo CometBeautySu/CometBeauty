@@ -100,20 +100,20 @@ const InforSection = ({
       <Container background={background}>
       <ColumnRight reverse={reverse}>
           <img src={image} alt='home' 
-            // data-aos='zoom-out'
-            // data-aod-duration='1000'
-            // data-aos-once='true'
-            // data-aos-delay={delay}
-            // data-aos-anchor-placement='center bottom'
+            data-aos='zoom-out'
+            data-aod-duration='1000'
+            data-aos-once='true'
+            data-aos-delay={delay}
+            data-aos-anchor-placement='center bottom'
           />
         </ColumnRight>
         <ColumnLeft
           reverse={reverse}
-          // data-aos='fade-up'
-          // data-aod-duration='1000'
-          // data-aos-once='true'
-          // data-aos-delay={delay}
-          // data-aos-anchor-placement='center bottom'
+          data-aos='fade-up'
+          data-aod-duration='1000'
+          data-aos-once='true'
+          data-aos-delay={delay}
+          data-aos-anchor-placement='center bottom'
         >
           <h1>{heading}</h1>
           <h3>{paragraphOne}</h3>

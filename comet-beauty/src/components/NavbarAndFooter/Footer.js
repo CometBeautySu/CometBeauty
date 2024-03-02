@@ -4,9 +4,11 @@ import { Button } from '../Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { IoLogoWechat } from "react-icons/io5";
+import { xiaohongshu } from '../../assets/images'
 
 const Section = styled.section`
-  background: #000d1a;
+  background: #1B4242;
   color: #fff;
   width: 100%;
   min-height: 100px;
@@ -30,11 +32,12 @@ const FooterTop = styled.div`
 `
 
 const Quote = styled.div`
-  flex: 1;
+  flex: 0.95;
   padding: 2rem 0rem;
 
   h3 {
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 300;
   }
 `
 
@@ -76,7 +79,8 @@ const SocialIcons = styled.div`
 const Icons = css`
   font-size: clamp(1rem, 6vw, 2rem);
   margin-right: 1.5rem;
-  color: #1B4242;
+  margin-top: 0.6rem;
+  color: #5C8374;
 `
 
 const Instagram = styled(FaInstagram)`
@@ -92,6 +96,14 @@ const LinkedIn = styled(FaLinkedinIn)`
 `
 
 const Youtube = styled(FaYoutube)`
+  ${Icons};
+`
+
+const WeChat = styled(IoLogoWechat)`
+  ${Icons};
+`
+
+const XiaoHongShu = styled(xiaohongshu)`
   ${Icons};
 `
 
@@ -113,23 +125,34 @@ const Footer = () => {
       <Container>
         <FooterTop>
           <Quote>
-            <h3>Let's find</h3>
-            <h3>your Dream Home</h3>
+            <h3>Rediscover Beauty</h3>
+            <h3>Unwind in Elegance</h3>
           </Quote>
           <FooterInfo>
             <h4>Contact Us</h4>
-            <Link to="/homes">FAQs</Link>
+            {/* <Link to="/homes">FAQs</Link>
             <Link to="/homes">Support</Link>
-            <Link to="/homes">Questions</Link>
+            <Link to="/homes">Questions</Link> */}
+            <p><i>+(1) 253-457-8967</i></p>
+            <SocialIcons>
+              <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
+                <WeChat />
+              </a>
+              <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
+                <Instagram />
+              </a>
+              {/* <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
+                <XiaoHongShu />
+              </a> */}
+            </SocialIcons>
           </FooterInfo>
           <FooterInfo>
-            <h4>Offices</h4>
-            <Link to="/homes">United States</Link>
-            <Link to="/homes">Europe</Link>
-            <Link to="/homes">Canada</Link>
+            <h4>Address</h4>
+            <p><i>15935 NE 8TH ST，Suite B100,<br/>BELLEVUE, WA 98008</i></p>
+            <p></p>
           </FooterInfo>
         </FooterTop>
-        <FooterBottom>
+        {/* <FooterBottom>
           <SocialIcons>
             <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
               <Youtube />
@@ -145,11 +168,11 @@ const Footer = () => {
             </a>
           </SocialIcons>
           <Contact>
-            <Button to='/homes'>
+            <Button to='/homes' primary>
               Let's Chat <IoMdArrowRoundForward />
             </Button>
           </Contact>
-        </FooterBottom>
+        </FooterBottom> */}
       </Container>
     </Section>
   )

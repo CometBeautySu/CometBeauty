@@ -85,11 +85,11 @@ const CardItem = (props) => {
   return (
     <>
       <CardSection
-        // data-aos='zoom-out'
-        // data-aod-duration='1000'
-        // data-aos-once='true'
-        // data-aos-delay='300'
-        // data-aos-anchor-placement='center bottom'
+        data-aos='zoom-out'
+        data-aod-duration='1000'
+        data-aos-once='true'
+        data-aos-delay='300'
+        data-aos-anchor-placement='center bottom'
       >
         <CardItemLink to={props.path}>
           <CardItemPicWrap>
