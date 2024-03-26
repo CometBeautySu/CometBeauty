@@ -4,6 +4,7 @@ import ImageThree from '../images/image3.jpg'
 import ImageFour from '../images/image4.jpg'
 import Wedding2 from '../images/wedding2.jpg'
 import Wedding3 from '../images/wedding3.jpg'
+import { mainimage } from '../images'
 
 
 export const SliderData = [
@@ -12,7 +13,7 @@ export const SliderData = [
         price: "We are here for your everymoods",
         path: "/homes",
         label: "Contact Us",
-        image: Wedding3,
+        image: mainimage,
         alt: "susu beauty"
     },
     {

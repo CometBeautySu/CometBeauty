@@ -104,7 +104,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <Nav style={style}>
-      <Logo to="/">Comet Beauty</Logo>
+      <Logo to="/">Susu Beauty</Logo>
       <MenuBars onClick={toggle}/>
       <NavMenu>
         {menuData.map((item, index) => (

@@ -6,6 +6,8 @@ import plant from './plant.jpg';
 import zoe from './zoe.jpg';
 import susu from './susu.jpg';
 import xiaohongshu from './xiaohongshu.svg';
+import mainimage from './mainImg.jpg';
+import logoImage from './logoImage.jpg'
 
 export {
     bridal_makeup,
@@ -16,4 +18,6 @@ export {
     zoe,
     susu,
     xiaohongshu,
+    mainimage,
+    logoImage,
 }

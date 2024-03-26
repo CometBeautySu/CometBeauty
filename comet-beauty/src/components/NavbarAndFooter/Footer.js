@@ -12,7 +12,7 @@ const Section = styled.section`
   color: #fff;
   width: 100%;
   min-height: 100px;
-  padding: 1rem calc((100vw - 1300px) / 2);
+  // padding: 1rem calc((100vw - 1300px) / 2);
 `
 
 const Container = styled.div`
@@ -32,12 +32,16 @@ const FooterTop = styled.div`
 `
 
 const Quote = styled.div`
-  flex: 0.95;
-  padding: 2rem 0rem;
+  flex: 0.8;
+  padding: 2rem 4rem;
 
   h3 {
     font-size: clamp(2rem, 5vw, 5rem);
     font-weight: 300;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0;
   }
 `
 
@@ -125,15 +129,14 @@ const Footer = () => {
       <Container>
         <FooterTop>
           <Quote>
-            <h3>Rediscover Beauty</h3>
-            <h3>Unwind in Elegance</h3>
+            <h3>SUSU BEAUTY</h3>
+            <h3>打造你的美</h3>
           </Quote>
-          <FooterInfo>
+          {/* <FooterInfo>
             <h4>Contact Us</h4>
-            {/* <Link to="/homes">FAQs</Link>
+            <Link to="/homes">FAQs</Link>
             <Link to="/homes">Support</Link>
-            <Link to="/homes">Questions</Link> */}
-            <p><i>+(1) 253-457-8967</i></p>
+            <Link to="/homes">Questions</Link>
             <SocialIcons>
               <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
                 <WeChat />
@@ -141,15 +144,21 @@ const Footer = () => {
               <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
                 <Instagram />
               </a>
-              {/* <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
+              <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
                 <XiaoHongShu />
-              </a> */}
+              </a>
             </SocialIcons>
-          </FooterInfo>
+          </FooterInfo> */}
           <FooterInfo>
             <h4>Address</h4>
             <p><i>15935 NE 8TH ST，Suite B100,<br/>BELLEVUE, WA 98008</i></p>
             <p></p>
+          </FooterInfo>
+          <FooterInfo>
+            <h4>Useful Links</h4>
+            <Link to="/">Home</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/contact">Contact Us</Link>
           </FooterInfo>
         </FooterTop>
         {/* <FooterBottom>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled, { css } from 'styled-components'
-import { Button } from './Button'
+import { Button } from '../Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -72,7 +72,7 @@ const SliderImage = styled(motion.img)`
 
   @media screen and (max-width: 650px) {
     height: 100vh;
-    object-position: 30% 20%;
+    // object-position: 30% 40%;
   }
 `
 
