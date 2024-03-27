@@ -5,6 +5,7 @@
 ### `npm add styled-components.macro --dev`
 ### `npm install framer-motion`
 ### `npm install aos`
+### `npm install react-slick slick-carousel`
 
 # Getting Started with Create React App
 

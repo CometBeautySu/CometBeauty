@@ -7,9 +7,22 @@ export const ServiceData = [
         title: "Bridal Makeup / Portrait",
         detail: "Elevate your wedding day with flawless bridal makeup and captivating photography moments.",
         artist: "Susu",
-        path: "/services/makeup",
+        path: "/services",
         label: "MakeUp",
-        image: bridal_makeup,
+        images: [
+            {
+                "src": bridal_makeup,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": nail,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": massage,
+                "alt": "bridal makeup"
+            },
+        ],
         alt: "化妆"
     },
     {
@@ -17,9 +30,22 @@ export const ServiceData = [
         title: "色彩 / 化妆课",
         detail: "Explore glamour in our Beauty Series, featuring expert services in nail art and stunning eyelash enhancements.",
         artist: "Susu",
-        path: "/services/makeup",
+        path: "/services",
         label: "MakeUp",
-        image: bridal_makeup,
+        images: [
+            {
+                "src": bridal_makeup,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": nail,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": massage,
+                "alt": "bridal makeup"
+            },
+        ],
         alt: "beauty"
     },  
     {
@@ -27,7 +53,7 @@ export const ServiceData = [
         title: "半永久纹绣",
         detail: "打造全脸幼态自然感定妆 / 温柔风纯手工微针雾眉 / 野生感妈生线条眉 / 灵气有神自然美瞳线",
         artist: "Zoe Su",
-        path: "/services/microblading",
+        path: "/services",
         label: "Facial",
         image: eyebrow,
         alt: "美容"

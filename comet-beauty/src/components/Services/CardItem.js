@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import CardImage from './CardImage'
 
 const CardSection = styled.li`
   display: flex;
@@ -38,25 +39,25 @@ const CardItemPicWrap = styled.figure`
 //   animation-duration: 2s;
 // `
 
-const CardImage = styled.img`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  object-position: 0% 20%;
-  transition: all 0.2s linear;
+// const CardImage = styled.img`
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   display: block;
+//   width: 100%;
+//   max-width: 100%;
+//   height: 100%;
+//   max-height: 100%;
+//   object-fit: cover;
+//   object-position: 0% 20%;
+//   transition: all 0.2s linear;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-`
+//   &:hover {
+//     transform: scale(1.1);
+//   }
+// `
 
 const CardItemInfo = styled.div`
   padding: 20px 30px 30px;
@@ -85,15 +86,16 @@ const CardItem = (props) => {
   return (
     <>
       <CardSection
-        data-aos='zoom-out'
-        data-aod-duration='1000'
-        data-aos-once='true'
-        data-aos-delay='300'
-        data-aos-anchor-placement='center bottom'
+        // data-aos='zoom-out'
+        // data-aod-duration='1000'
+        // data-aos-once='true'
+        // data-aos-delay='300'
+        // data-aos-anchor-placement='center bottom'
       >
         <CardItemLink to={props.path}>
           <CardItemPicWrap>
-            <CardImage src={props.scr} alt="Images"/>
+            {/* <CardImage src={props.scr} alt="Images"/> */}
+            <CardImage images={props.src}/>
           </CardItemPicWrap>
           <CardItemInfo>
             <h5>{props.title}</h5>

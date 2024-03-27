@@ -53,11 +53,11 @@ const Cards = ( props ) => {
   return (
     <>
       <CardsSection
-        data-aos='zoom-out'
-        data-aod-duration='1000'
-        data-aos-once='true'
-        data-aos-delay='300'
-        data-aos-anchor-placement='center bottom'
+        // data-aos='zoom-out'
+        // data-aod-duration='1000'
+        // data-aos-once='true'
+        // data-aos-delay='300'
+        // data-aos-anchor-placement='center bottom'
       >
         <h1>Our Services</h1>
         <p>Explore more services</p>
@@ -71,13 +71,13 @@ const Cards = ( props ) => {
                   detail={item.detail}
                   // path={item.path}
                   label={item.label}
-                  scr={item.image}
+                  src={item.images}
                   alt={item.alt}
                   artist={item.artist}>
                 </CardItem>
               ))}
             </CardsItems>
-            <CardsItems>
+            {/* <CardsItems>
               {serviceData.slice(2, 5).map(item => (
                 <CardItem 
                   key={item.id} 
@@ -89,7 +89,7 @@ const Cards = ( props ) => {
                   alt={item.alt}>
                   </CardItem>
               ))}
-            </CardsItems>
+            </CardsItems> */}
           </CardsWrapper>
         </CardsContainer>
       </CardsSection>
