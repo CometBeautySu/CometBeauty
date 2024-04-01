@@ -77,19 +77,20 @@ const Cards = ( props ) => {
                 </CardItem>
               ))}
             </CardsItems>
-            {/* <CardsItems>
+            <CardsItems>
               {serviceData.slice(2, 5).map(item => (
                 <CardItem 
                   key={item.id} 
                   title={item.title} 
                   detail={item.detail}
-                  path={item.path}
+                  // path={item.path}
                   label={item.label}
-                  scr={item.image}
-                  alt={item.alt}>
+                  src={item.images}
+                  alt={item.alt}
+                  artist={item.artist}>
                   </CardItem>
               ))}
-            </CardsItems> */}
+            </CardsItems>
           </CardsWrapper>
         </CardsContainer>
       </CardsSection>

@@ -37,6 +37,7 @@ const Indicators = styled.span`
 
 const LeftArrow = styled(BsArrowLeftCircleFill)`
 	position: absolute;
+  top: 50%;
 	filter: drop-shadow(0px 0px 5px #555);
 	width: 2rem;
 	height: 2rem;
@@ -51,6 +52,7 @@ const LeftArrow = styled(BsArrowLeftCircleFill)`
 
 const RightArrow = styled(BsArrowRightCircleFill)`
 	position: absolute;
+  top: 50%;
 	filter: drop-shadow(0px 0px 5px #555);
 	width: 2rem;
 	height: 2rem;
@@ -79,6 +81,7 @@ const CardImage = (props) => {
 	const slides = props.images;
 
 	const [slide, setSlide] = useState(0);
+  const [touchPosition, setTouchPosition] = useState(null);
 
   const nextSlide = () => {
     setSlide(slide === slides.length - 1 ? 0 : slide + 1);
@@ -88,10 +91,34 @@ const CardImage = (props) => {
     setSlide(slide === 0 ? slides.length - 1 : slide - 1);
   };
 
-  return (
-    <Carousel>
-			{/* <LeftArrow onClick={prevSlide} /> */}
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
 
+  const handleTouchMove = (e) => {
+    if (touchPosition === null) {
+      return;
+    }
+
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchPosition - currentTouch;
+
+    if (diff > 5) {
+      nextSlide();
+    } else if (diff < -5) {
+      prevSlide();
+    }
+
+    setTouchPosition(null);
+  };
+
+  return (
+    <Carousel
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+    >
+			{/* <LeftArrow onClick={prevSlide} /> */}
       {slides.map((item, idx) => {
         return (
           <Slide

@@ -55,7 +55,21 @@ export const ServiceData = [
         artist: "Zoe Su",
         path: "/services",
         label: "Facial",
-        image: eyebrow,
+        // image: eyebrow,
+        images: [
+            {
+                "src": bridal_makeup,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": nail,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": massage,
+                "alt": "bridal makeup"
+            },
+        ],
         alt: "美容"
     },
     {
@@ -65,7 +79,21 @@ export const ServiceData = [
         artist: "Susu",
         path: "",
         label: "Facial",
-        image: nail,
+        // image: nail,
+        images: [
+            {
+                "src": bridal_makeup,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": nail,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": massage,
+                "alt": "bridal makeup"
+            },
+        ],
         alt: "beauty"
     },    
     {
@@ -75,7 +103,21 @@ export const ServiceData = [
         artist: "Lifang Su",
         path: "",
         label: "Body",
-        image: massage,
+        // image: massage,
+        images: [
+            {
+                "src": bridal_makeup,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": nail,
+                "alt": "bridal makeup"
+            },
+            {
+                "src": massage,
+                "alt": "bridal makeup"
+            },
+        ],
         alt: "美体"
     },
     // {
