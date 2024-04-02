@@ -101,14 +101,21 @@ const Navbar = ({ toggle }) => {
     background: navbar || location.pathname !== "/" ? '#1B4242' : 'transparent',
     transition: '0.4s'
   }
+  const scrollToTop = () => {
+    console.log('Scrolling to top');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // 使用平滑滚动
+    });
+  };
 
   return (
     <Nav style={style}>
-      <Logo to="/">Susu Beauty</Logo>
+      <Logo to="/" onClick={scrollToTop}>Susu Beauty</Logo>
       <MenuBars onClick={toggle}/>
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavMenuLinks to={item.link} key={index}>
+          <NavMenuLinks to={item.link} key={index} onClick={() => item.title.toLowerCase() === 'home' && scrollToTop()}>
             {item.title}
           </NavMenuLinks>
         ))}

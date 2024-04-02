@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { menuData } from '../assets/data/MenuData'
-import { Button } from './Button'
+import { menuData } from '../../assets/data/MenuData'
+import { Button } from '../Button'
 import { Link } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 
@@ -66,6 +66,13 @@ const BtnWrap = styled.div`
 `
 
 const Dropdown = ({isOpen, toggle}) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // 使用平滑滚动
+    });
+  };
+
   return (
     <DropdownContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -74,7 +81,7 @@ const Dropdown = ({isOpen, toggle}) => {
       <DropdownWrapper>
         <DropdownMenu>
           {menuData.map((item, index) => (
-            <DropdownLink to={item.link} key={index}>
+            <DropdownLink to={item.link} key={index} onClick={scrollToTop}>
               {item.title}
             </DropdownLink>
           ))}

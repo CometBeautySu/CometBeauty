@@ -123,7 +123,21 @@ const Contact = styled.div`
   }
 `
 
+const StyledLink = styled(Link)`
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-3px); /* 或者其他过渡效果 */
+  }
+`
+
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // 使用平滑滚动
+    });
+  };
+
   return (
     <Section>
       <Container>
@@ -156,9 +170,9 @@ const Footer = () => {
           </FooterInfo>
           <FooterInfo>
             <h4>Useful Links</h4>
-            <Link to="/">Home</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/contact">Contact Us</Link>
+            <StyledLink to="/" onClick={scrollToTop}>Home</StyledLink>
+            <StyledLink to="/services">Services</StyledLink>
+            <StyledLink to="/contact">Contact Us</StyledLink>
           </FooterInfo>
         </FooterTop>
         {/* <FooterBottom>

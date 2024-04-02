@@ -69,7 +69,7 @@ const Cards = ( props ) => {
                   key={item.id} 
                   title={item.title} 
                   detail={item.detail}
-                  // path={item.path}
+                  path={item.path}
                   label={item.label}
                   src={item.images}
                   alt={item.alt}
@@ -83,7 +83,7 @@ const Cards = ( props ) => {
                   key={item.id} 
                   title={item.title} 
                   detail={item.detail}
-                  // path={item.path}
+                  path={item.path}
                   label={item.label}
                   src={item.images}
                   alt={item.alt}
