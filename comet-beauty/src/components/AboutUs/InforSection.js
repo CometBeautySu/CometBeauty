@@ -84,6 +84,42 @@ const ColumnRight = styled.div`
   }
 `
 
+const ContactContainer = styled.div`
+  // display: flex;
+  width: 100%;
+  // flex-direction: row;
+  h3 {
+    margin: 0;
+    padding: 7px 0;
+  }
+
+  @media (max-width: 765px) {
+    h3 {
+      text-align: center;
+    }
+  }
+`
+
+const ContactWraper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  p {
+    padding: 10px 0;
+    margin: 0;
+  }
+
+
+`
+
+const QrCode = styled.img`
+  content-justify: flex-end;
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+`
+
 const InforSection = ({
   heading, 
   paragraphOne, 
@@ -92,8 +128,12 @@ const InforSection = ({
   reverse, 
   image,
   background,
-  delay
+  delay,
+  contactInfo
 }) => {
+
+  console.log(contactInfo);
+
   return (
     <>
     <Section>
@@ -119,6 +159,15 @@ const InforSection = ({
           <h3>{paragraphOne}</h3>
           <p>{paragraphTwo}</p>
           <Button to='/homes' primary='true'>{buttonLabel}</Button>
+          {/* <ContactContainer >
+            <h3>Contact:</h3>
+            <ContactWraper>
+              {contactInfo.map((info) => (
+                <p key={info.id}>{info.contact}</p>
+              ))}
+            </ContactWraper>
+            <QrCode src={contactInfo[contactInfo.length - 1].qrCode} alt='qrCode'/>
+          </ContactContainer> */}
         </ColumnLeft>
       </Container>
     </Section>

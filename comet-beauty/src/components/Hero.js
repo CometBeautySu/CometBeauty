@@ -22,7 +22,6 @@ const LogoImage = styled.img`
   width: 40%;
   height: 50%;
   object-fit: cover;
-  object-position: 20% 10%;
   border-radius: 10%;
   margin-top: 12%;
 

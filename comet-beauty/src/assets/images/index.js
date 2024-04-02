@@ -7,7 +7,8 @@ import zoe from './zoe.jpg';
 import susu from './susu.jpg';
 import xiaohongshu from './xiaohongshu.svg';
 import mainimage from './mainImg.jpg';
-import logoImage from './logoImage.jpg'
+import logoImage from './logoImage.jpg';
+import qrCode from './qrCode.jpg';
 
 export {
     bridal_makeup,
@@ -20,4 +21,5 @@ export {
     xiaohongshu,
     mainimage,
     logoImage,
+    qrCode,
 }
