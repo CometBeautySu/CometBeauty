@@ -1,10 +1,10 @@
 import React from 'react'
-import Contact from './ContactPage'
+import ServiceDetail from '../components/ServiceDetail/ServiceDetail'
 
 const MakeupPage = () => {
   return (
     <div>
-        <Contact />
+        <ServiceDetail />
     </div>
   )
 }

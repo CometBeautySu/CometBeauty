@@ -94,17 +94,16 @@ const StyledButton = styled(Button)`
 `
 
 const CardItem = (props) => {
-  console.log(props.path)
   return (
     <>
       <CardSection
-        // data-aos='zoom-out'
-        // data-aod-duration='1000'
-        // data-aos-once='true'
-        // data-aos-delay='300'
-        // data-aos-anchor-placement='center bottom'
+        data-aos='zoom-out'
+        data-aod-duration='1000'
+        data-aos-once='true'
+        data-aos-delay='300'
+        data-aos-anchor-placement='center bottom'
       >
-        <CardItemLink >
+        <CardItemLink to={props.path}>
           <CardItemPicWrap>
             {/* <CardImage src={props.scr} alt="Images"/> */}
             <CardImage images={props.src}/>

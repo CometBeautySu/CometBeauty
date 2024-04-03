@@ -9,6 +9,7 @@ import xiaohongshu from './xiaohongshu.svg';
 import mainimage from './mainImg.jpg';
 import logoImage from './logoImage.jpg';
 import qrCode from './qrCode.jpg';
+import work from './work.jpg';
 
 export {
     bridal_makeup,
@@ -22,4 +23,5 @@ export {
     mainimage,
     logoImage,
     qrCode,
+    work,
 }
