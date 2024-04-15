@@ -98,7 +98,7 @@ const Navbar = ({ toggle }) => {
   }, [])
 
   let style = {
-    background: navbar || location.pathname !== "/" ? '#1B4242' : 'transparent',
+    background: navbar || location.pathname !== "/" ? '#636c59' : 'transparent',
     transition: '0.4s'
   }
   const scrollToTop = () => {

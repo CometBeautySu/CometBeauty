@@ -10,6 +10,8 @@ import mainimage from './mainImg.jpg';
 import logoImage from './logoImage.jpg';
 import qrCode from './qrCode.jpg';
 import work from './work.jpg';
+import background1 from './background1.jpg';
+
 
 export {
     bridal_makeup,
@@ -24,4 +26,5 @@ export {
     logoImage,
     qrCode,
     work,
+    background1,
 }

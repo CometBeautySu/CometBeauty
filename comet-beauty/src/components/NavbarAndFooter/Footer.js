@@ -8,7 +8,7 @@ import { IoLogoWechat } from "react-icons/io5";
 import { xiaohongshu } from '../../assets/images'
 
 const Section = styled.section`
-  background: #1B4242;
+  background: #636c59;
   color: #fff;
   width: 100%;
   min-height: 100px;
