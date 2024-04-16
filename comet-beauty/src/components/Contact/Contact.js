@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button'
 import ImageOne from '../../assets/images/image1.jpg'
+import { ContactInfoOne } from '../../assets/data/ContactInfos'
+import { susu } from '../../assets/images'
 
 const Sections = styled.section`
-  background: #000d1a;
   padding: 12rem 0rem;
   display: flex;
   flex-direction: column;
@@ -17,9 +18,23 @@ const Container = styled.div`
   position: relative;
 `
 
-const Wrap = styled.div`
+const InfoCards = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  flex-direction: row;
+
+  // img {
+  //   height: 100%;
+  //   width: 30%;
+  //   border
+  // }
+`
+
+const Avatar = styled.img`
+  height: 100%;
+  width: 30%;
+  border-radius: 50%; /* 将头像变为原型 */
+  object-fit: cover; /* 保持图像比例不变 */
 `
 
 const ColumnLeft = styled.div`
@@ -30,24 +45,28 @@ const ColumnLeft = styled.div`
   padding: 1rem;
 `
 
+// const Content = styled.div`
+//   flex: 0 0 50%;
+
+//   @media screen and (max-width: 768px) {
+//     flex: 0 0 100%;
+//     max-width: 100%;
+//     margin-top: 250px;
+//   }
+
+//   h1 {
+//     margin-bottom: 2rem;
+//     font-size: 2rem;
+//   }
+
+//   p {
+//     margin-bottom: 1rem;
+//     line-height: 1.5;
+//   }
+// `
+
 const Content = styled.div`
-  flex: 0 0 50%;
 
-  @media screen and (max-width: 768px) {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 250px;
-  }
-
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-
-  p {
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
 `
 
 const ColumnRight = styled.div`
@@ -78,37 +97,17 @@ const Features = () => {
   return (
     <Sections>
       <Container>
-        <Wrap>
-          <ColumnLeft>
-          <Content
-            data-aos='fade-right'
-            data-aos-duration='1200'
-            data-aos-delay='300'
-            data-aos-once='true'
-            data-aos-anchor-placement='center bottom'
-          >
-            <h1>Welcome to contact us!</h1>
-            <p>
-              WX:
-            </p>
-            <p>
-              小红书：
-            </p>
-            <p>
-              ins:
-            </p>
-            <Button to="/homes">Learn More</Button>
+        <InfoCards>
+          <Avatar src={susu} alt='susu_image'></Avatar>
+          <Content>
+            <p>Name:</p>
+            {
+              ContactInfoOne.map((item, id) => (
+                <p key={id}>{item.contact}</p>
+              ))
+            }
           </Content>
-          </ColumnLeft>
-          <ColumnRight>
-            <Image src={ImageOne} 
-              data-aos='fade-left'
-              data-aos-duration='1200'
-              data-aos-once='true'
-              data-aos-anchor-placement='center bottom'
-            />
-          </ColumnRight>
-        </Wrap>
+        </InfoCards>
       </Container>
     </Sections>
   )

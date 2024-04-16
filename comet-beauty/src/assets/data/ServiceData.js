@@ -1,4 +1,7 @@
-import { nail, massage, bridal_makeup, eyebrow } from "../images";
+import { 
+        nail, massage, bridal_makeup, eyebrow,
+        main_microblading1, main_microblading2,
+        main_microblading3 } from "../images";
 
 
 export const ServiceData = [
@@ -60,15 +63,15 @@ export const ServiceData = [
         // image: eyebrow,
         images: [
             {
-                "src": bridal_makeup,
+                "src": main_microblading2,
                 "alt": "bridal makeup"
             },
             {
-                "src": nail,
+                "src": main_microblading1,
                 "alt": "bridal makeup"
             },
             {
-                "src": massage,
+                "src": main_microblading3,
                 "alt": "bridal makeup"
             },
         ],

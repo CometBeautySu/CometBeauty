@@ -33,6 +33,14 @@ const CardItemPicWrap = styled.figure`
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 120%;
+  }
+
+  @media screen and (min-width: 485px) {
+    padding-top: 78%;
+  }
 `
 
 // const FafeImage = styled.img`

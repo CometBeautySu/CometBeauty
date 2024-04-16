@@ -11,6 +11,10 @@ import logoImage from './logoImage.jpg';
 import qrCode from './qrCode.jpg';
 import work from './work.jpg';
 import background1 from './background1.jpg';
+import main_microblading1 from './main_microblading1.jpg';
+import main_microblading2 from './main_microblading2.png';
+import main_microblading3 from './main_microblading3.jpg';
+
 
 
 export {
@@ -27,4 +31,7 @@ export {
     qrCode,
     work,
     background1,
+    main_microblading1,
+    main_microblading2,
+    main_microblading3,
 }
