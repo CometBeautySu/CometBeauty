@@ -134,3 +134,30 @@ export const SusuServiceData = [
     //     title: 
     // },
 ];
+
+export const ZoeServiceData = [
+    {
+        id: 1,
+        title: "轻奢氧气雾眉",
+        description: "打造出渐变层次感，像眉粉扫过的感觉，呈雾状，朦胧感。",
+        way: "点刺手法，以点成面",
+        fit: "所有人",
+        maintenance: "因人而异, 3-4 年",
+    },
+    {
+        id: 2,
+        title: "丝雾眉",
+        description: "通过一根根仿真毛发结合空隙处雾化的填充达到灵动立体的效果，丝➕雾的结合达到妆感又毛流感",
+        way: "点刺➕画线手法，层次感十足。",
+        fit: "原生眉基础比较稀疏，毛发少",
+        maintenance: "因人而异, 3-4 年",
+    },
+    {
+        id: 3,
+        title: "美瞳线",
+        description: "增加睫毛密度，睁眼有神，闭眼无痕，自然的有氧妆感，放大双眼。",
+        way: "只在睫毛根部",
+        fit: "所有人",
+        maintenance: "因人而异, 3-4 年",
+    },
+];
