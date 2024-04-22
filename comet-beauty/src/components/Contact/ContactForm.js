@@ -42,19 +42,19 @@ const FormBody = styled.div`
 `
 
 const StyledButton = styled.button`
-background: #636c59;
-border: none;
-padding: 14px 24px;
-cursor: pointer;
-width: 100px;
-color: #fff;
-font-size: 14px;
-border-radius: 50px;
-margin: auto;
+  background: #636c59;
+  border: none;
+  padding: 14px 24px;
+  cursor: pointer;
+  width: 100px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50px;
+  margin: auto;
 
-&:hover {
-  transform: translateY(-2px);
-}  
+  &:hover {
+    transform: translateY(-2px);
+  }
 `
 
 const ContactForm = () => {
@@ -69,31 +69,65 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'service') { // 检查是否是选择服务的select
-      setForm({ ...form, service: value }); // 保存选择的服务值
-    } else {
-      setForm({ ...form, [name]: value }); // 其他情况正常保存值
-    }
+    setForm({ ...form, [name]: value });
     console.log(name, value);
   }
   
+// Jojo
+// service_b6qzz8k
+// template_wx5meat
+// pgOq-X-8A5xkOXznT
+// candicey328@gmail.com
 
+// Xinqi
+// service_a9joydg
+// template_snguf1e
+// EVto5k5rGf2YyPw20
+// xinqiy717595@gmail.com
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
     console.log(form)
 
+    let serviceId ='';
+    let templateId = '';
+    let apiKey = '';
+    let toEmail = '';
+    let toName = '';
+
+    switch (form.service) {
+      case 'makeup':
+        serviceId = 'service_b6qzz8k';
+        templateId = 'template_wx5meat';
+        apiKey = 'pgOq-X-8A5xkOXznT';
+        toEmail = 'candicey328@gmail.com';  // 换成化妆服务的实际接收邮箱
+        toName = 'JoJo';
+        break;
+      case 'microblading':
+        serviceId = 'service_a9joydg';
+        templateId = 'template_snguf1e';
+        apiKey = 'EVto5k5rGf2YyPw20';
+        toEmail = 'xinqiy717595@gmail.com';  // 换成化妆服务的实际接收邮箱
+        toName = 'Xinqi Yang';
+        break;
+      default:
+        console.log('Unknown service type');
+        setLoading(false);
+        return;
+    }
+
     emailjs.send(
-      'service_a9joydg', 
-      'template_snguf1e',
+      serviceId, 
+      templateId,
       {
         from_name: form.name,
-        to_name: 'Xinqi',
+        to_name: toName,
         from_email: form.email,
-        to_email: 'xinqiy717595@gmail.com',
+        to_email: toEmail,
+        reply_to: form.email,
         message: form.service+ ": "+ form.message,
       },
-      'EVto5k5rGf2YyPw20'
+      apiKey
     ).then(() => {
       setLoading(false);
       console.log("send");
@@ -104,12 +138,12 @@ const ContactForm = () => {
         email: '',
         service: '',
         message: '',
-      }, (error) => {
-        setLoading(false);
-        console.log(error);
-        alert('Something went wrong.')
-      })
-    })
+      });
+    }).catch((error) => {
+      setLoading(false);
+      console.log(error);
+      alert('Something went wrong.')
+    });
   }
 
   
@@ -145,8 +179,8 @@ const ContactForm = () => {
           </label>
           <label>
             <span>Select Service</span>
-            <select required onChange={handleChange} name='service'>
-              <option disabled selected>Select Service</option>
+            <select value={form.service} required onChange={handleChange} name='service'>
+              <option value='' disabled>Select Service</option>
               <option value='makeup'>化妆</option>
               <option value='microblading'>纹绣</option>
               <option value='spa'>SPA</option>
