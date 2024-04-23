@@ -26,10 +26,20 @@ function App() {
     setIsOpen(!isOpen)
   }
 
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0) // back to top when page changed
+  // }, [location.pathname])
   useLayoutEffect(() => {
-    window.scrollTo(0, 0) // back to top when page changed
-  }, [location.pathname])
-
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]); // 注意：这里添加了对location.hash的依赖
+  
   useEffect(() => {
     Aos.init({})
   }, [])
@@ -42,7 +52,7 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/about' exact element={<AboutPage />} />
-        <Route path='/services' exact element={< ServicePage />} />
+        {/* <Route path='/#services' exact element={< ServicePage />} /> */}
         <Route path='/gallery' exact element={<GalleryPage />} />
         <Route path='/contact' exact element={<Contact />} />
         <Route path='/makeup' exact element={<MakeupPage />} />

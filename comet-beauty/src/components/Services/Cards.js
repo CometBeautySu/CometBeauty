@@ -3,7 +3,7 @@ import CardItem from './CardItem'
 import styled from 'styled-components'
 
 
-const CardsSection = styled.div`
+const CardsSection = styled.section`
   padding: 2rem;
   background: #fff;
   margin-top: 0px;
@@ -53,6 +53,7 @@ const Cards = ( props ) => {
   return (
     <>
       <CardsSection
+        id='services'
         data-aos='zoom-out'
         data-aod-duration='1000'
         data-aos-once='true'
