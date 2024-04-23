@@ -1,18 +1,12 @@
 import React from 'react'
-import styled, { css } from 'styled-components/macro'
-import { Button } from '../Button'
-import { IoMdArrowRoundForward } from 'react-icons/io'
+import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
-import { IoLogoWechat } from "react-icons/io5";
-import { xiaohongshu } from '../../assets/images'
 
 const Section = styled.section`
   background: #636c59;
   color: #fff;
   width: 100%;
   min-height: 100px;
-  // padding: 1rem calc((100vw - 1300px) / 2);
 `
 
 const Container = styled.div`
@@ -32,7 +26,7 @@ const FooterTop = styled.div`
 `
 
 const Quote = styled.div`
-  flex: 0.8;
+  flex: 0.7;
   padding: 2rem 4rem;
 
   h3 {
@@ -50,6 +44,7 @@ const FooterInfo = styled.div`
   line-height: 3;
   display: flex;
   flex-direction: column;
+  flex: 0.35;
 
   a {
     color: #fff;
@@ -61,65 +56,22 @@ const FooterInfo = styled.div`
   }
 `
 
-const FooterBottom = styled.div`
+const Links = styled.div`
   display: flex;
+  flex-direction: column;
+
+  p {
+    display: none;
+  }
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-
-const SocialIcons = styled.div`
-  display: flex;
-  width: 50%;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-`
-
-const Icons = css`
-  font-size: clamp(1rem, 6vw, 2rem);
-  margin-right: 1.5rem;
-  margin-top: 0.6rem;
-  color: #5C8374;
-`
-
-const Instagram = styled(FaInstagram)`
-  ${Icons};
-`
-
-const FaceBook = styled(FaFacebookF)`
-  ${Icons};
-`
-
-const LinkedIn = styled(FaLinkedinIn)`
-  ${Icons};
-`
-
-const Youtube = styled(FaYoutube)`
-  ${Icons};
-`
-
-const WeChat = styled(IoLogoWechat)`
-  ${Icons};
-`
-
-const XiaoHongShu = styled(xiaohongshu)`
-  ${Icons};
-`
-
-const Contact = styled.div`
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  @media screen and (max-width:768px) {
-    width: 100%;
-    justify-content: flex-start;
+    p {
+      display: block;
+    }
   }
 `
 
@@ -146,23 +98,6 @@ const Footer = () => {
             <h3>SUSU BEAUTY</h3>
             <h3>打造你的美</h3>
           </Quote>
-          {/* <FooterInfo>
-            <h4>Contact Us</h4>
-            <Link to="/homes">FAQs</Link>
-            <Link to="/homes">Support</Link>
-            <Link to="/homes">Questions</Link>
-            <SocialIcons>
-              <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-                <WeChat />
-              </a>
-              <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-                <Instagram />
-              </a>
-              <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-                <XiaoHongShu />
-              </a>
-            </SocialIcons>
-          </FooterInfo> */}
           <FooterInfo>
             <h4>Address</h4>
             <p><i>15935 NE 8TH ST，Suite B100,<br/>BELLEVUE, WA 98008</i></p>
@@ -170,32 +105,15 @@ const Footer = () => {
           </FooterInfo>
           <FooterInfo>
             <h4>Useful Links</h4>
-            <StyledLink to="/" onClick={scrollToTop}>Home</StyledLink>
-            <StyledLink to="/services">Services</StyledLink>
-            <StyledLink to="/contact">Contact Us</StyledLink>
+            <Links>
+              <StyledLink to="/" onClick={scrollToTop}>Home</StyledLink>
+              <p>|</p>
+              <StyledLink to="/services">Services</StyledLink>
+              <p>|</p>
+              <StyledLink to="/contact">Contact Us</StyledLink>
+            </Links>
           </FooterInfo>
         </FooterTop>
-        {/* <FooterBottom>
-          <SocialIcons>
-            <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-              <Youtube />
-            </a>
-            <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-              <Instagram />
-            </a>
-            <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-              <FaceBook />
-            </a>
-            <a href="//www.google.com" rel="noopenner noreferrer" target="_blank">
-              <LinkedIn />
-            </a>
-          </SocialIcons>
-          <Contact>
-            <Button to='/homes' primary>
-              Let's Chat <IoMdArrowRoundForward />
-            </Button>
-          </Contact>
-        </FooterBottom> */}
       </Container>
     </Section>
   )

@@ -5,103 +5,102 @@ import { FaInstagram } from 'react-icons/fa'
 import { IoLogoWechat } from "react-icons/io5";
 import Gallery from '../Gallery/Gallery'
 import { ServiceData } from '../../assets/data/ServiceData';
+import ContactCard from '../Contact/ContactCard'
+import { ContactInfo } from '../../assets/data/ContactInfos'
 
 const ServiceDetailContainer = styled.section`
-    width: 100%;
-    min-height: 100vh;
+	width: 100%;
+	min-height: 100vh;
+
+	h1 {
+		font-weight: 500;
+		text-align: center;
+	}
+
+	hr {
+		width: 85%;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
 `
 
 const ServiceDetailheader = styled.div`
-    position: relative;
+	position: relative;
 
-    img {
-        height: 300px;
-    }
+	img {
+			height: 300px;
+	}
 
-    h1 {
-        position: absolute;
-        font-weight: 500;
-        top: 59%; /* 让 h1 的顶部与父元素的中间对齐 */
-        left: 50%; /* 让 h1 的左边与父元素的中间对齐 */
-        transform: translate(-50%, -50%); /* 使用 transform 属性将 h1 的中心点移到父元素的中心点 */
-    }
+	h1 {
+			position: absolute;
+			font-weight: 500;
+			top: 59%; /* 让 h1 的顶部与父元素的中间对齐 */
+			left: 50%; /* 让 h1 的左边与父元素的中间对齐 */
+			transform: translate(-50%, -50%); /* 使用 transform 属性将 h1 的中心点移到父元素的中心点 */
+	}
 `
 
 const ServiceDetailWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin: 2rem 2rem;
-    flex-direction: column;
+	display: flex;
+	flex-direction: row;
+	margin: 2rem 2rem;
+	flex-direction: column;
 
-    h1 {
-        text-align: center;
-        padding: 5px 0;
-    }
-    
-    p {
-        padding: 20px;
-        line-height: 2em;
-    }
+	h1 {
+			text-align: center;
+			padding: 5px 0;
+	}
+	
+	p {
+			padding: 20px;
+			line-height: 2em;
+	}
 
-    img {
-        object-fit: cover;
-        margin: 20px auto;
-        height: 100%;
-        width: 90%;
-    }
+	img {
+			object-fit: cover;
+			margin: 20px auto;
+			height: 100%;
+			width: 90%;
+	}
 `
 
 const ContactContainer = styled.div`
-    margin: 2rem 2rem;
-    text-align: center;
+	margin: 2rem 2rem;
+	text-align: center;
 
-    h3 {
-        padding: 5px 0;
-    }
-
-
+	h3 {
+			padding: 5px 0;
+	}
 `
 
 const Contact = styled.div`
-    display: flex;
-    justify-content: space-between;
+	// display: flex;
+	// justify-content: space-between;
 
-    p {
-        // padding: 25% 0;
-        line-height: 3em;
-        margin: auto;
-        text-align: left;
-        
-    }
+	// p {
+	//     // padding: 25% 0;
+	//     line-height: 3em;
+	//     margin: auto;
+	//     text-align: left;
+			
+	// }
 
-    img {
-        padding: 8px;
-        width: 60%;
-        max-width: 300px;
-        height: 100%;
-        margin: auto;
-        object-fit: cover;
-    }
-`
-
-const Icons = css`
-  font-size: clamp(1rem, 6vw, 2rem);
-  margin-right: 0.6rem;
-  margin-top: 0.6rem;
-  color: #5C8374;
-`
-
-const Instagram = styled(FaInstagram)`
-  ${Icons};
-  vertical-align: -6px;
-`
-
-const WeChat = styled(IoLogoWechat)`
-  ${Icons};
-  vertical-align: -6px;
+	// img {
+	//     padding: 8px;
+	//     width: 60%;
+	//     max-width: 300px;
+	//     height: 100%;
+	//     margin: auto;
+	//     object-fit: cover;
+	// }
+	h1 {
+		margin-top: 1.2rem;
+	}
 `
 
 const ServiceDetail = () => {
+	const SusuContactInfo = ContactInfo[0];
   return (
     <div>
       <ServiceDetailContainer>
@@ -133,8 +132,17 @@ const ServiceDetail = () => {
         </ServiceDetailWrapper>
 
         <hr />
+				<Contact>
+					<h1>联系方式</h1>
+					<ContactCard
+						name={SusuContactInfo.name}
+						avatar={SusuContactInfo.avatar}
+						alt={SusuContactInfo.alt}
+						contact={SusuContactInfo.contact}
+					/>
+				</Contact>
 
-        <ContactContainer>
+        {/* <ContactContainer>
             <h3 data-aos='fade-down' data-aos-duration='600' data-aos-once='true'>Contact Me</h3>
             <Contact data-aos='fade-up' data-aos-duration='600' data-aos-once='true'>
                 <p>
@@ -147,7 +155,7 @@ const ServiceDetail = () => {
                 </p>
                 <img src={qrCode} alt='qrCode'/>
             </Contact>
-        </ContactContainer>
+        </ContactContainer> */}
 
         {/* <Gallery service={ServiceData}/> */}
 

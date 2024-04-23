@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button'
+import { Link } from 'react-router-dom'
 // import { plant } from '../../assets/images'
 
 const Section = styled.section`
@@ -49,6 +50,10 @@ const ColumnLeft = styled.div`
     line-height: 27px;
     // text-align: center;
   }
+
+  // p:last-of-type {
+  //   margin-bottom: 0.3rem;
+  // }
 
   @media screen and (max-width: 768px) {
     align-items: center;
@@ -120,6 +125,27 @@ const QrCode = styled.img`
   height: 100%;
 `
 
+const ServicesLink = styled.div`
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  p {
+    margin: 0;
+  }
+`
+
+const ServiceLink = styled(Link)`
+  outline: none;
+  border: none;
+  text-decoration: green wavy underline;
+  margin-top: 0.2rem;
+  margin-left: 10px;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+`
+
 const InforSection = ({
   heading, 
   paragraphOne, 
@@ -129,10 +155,11 @@ const InforSection = ({
   image,
   background,
   delay,
-  contactInfo
+  contactInfo,
+  services
 }) => {
 
-  console.log(contactInfo);
+  console.log(services);
 
   return (
     <>
@@ -158,7 +185,20 @@ const InforSection = ({
           <h1>{heading}</h1>
           <h3>{paragraphOne}</h3>
           <p>{paragraphTwo}</p>
-          <Button to='/homes' primary='true'>{buttonLabel}</Button>
+          <ServicesLink>
+          <p>View More: </p>
+            {
+              services.map((item) => (
+                <ServiceLink
+                  key={item.id}
+                  to={item.path}
+                >
+                  {item.title}
+                </ServiceLink>
+              ))
+            }
+          </ServicesLink>
+          {/* <Button to='/homes' primary='true'>{buttonLabel}</Button> */}
           {/* <ContactContainer >
             <h3>Contact:</h3>
             <ContactWraper>

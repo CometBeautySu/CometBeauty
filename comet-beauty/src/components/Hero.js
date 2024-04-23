@@ -40,6 +40,7 @@ const StyledButton = styled(Button)`
   &:active {
       background-color: #404731;
   }
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     margin-top: 30%;

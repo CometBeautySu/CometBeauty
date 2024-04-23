@@ -34,9 +34,11 @@ function App() {
       const element = document.getElementById(location.hash.slice(1));
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => Aos.refresh(), 600);  // 等待滚动完成后刷新AOS
       }
     } else {
       window.scrollTo(0, 0);
+      Aos.refresh();  // 无锚点时也保证AOS状态正确
     }
   }, [location.pathname, location.hash]); // 注意：这里添加了对location.hash的依赖
   

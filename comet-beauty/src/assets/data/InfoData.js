@@ -33,7 +33,24 @@ export const InfoData = {
   path: "/services/makeup",
   image: susu,
   reverse: true, // image on the left or right
-  delay: 100
+  delay: 100,
+  services: [
+    {
+      id: 1,
+      title: '化妆课',
+      path: '/makeup'
+    },
+    {
+      id: 2,
+      title: '新娘妆发',
+      path: '/makeup'
+    }, 
+    {
+      id: 3,
+      title: '美甲 / 美睫',
+      path: '/makeup'
+    }
+  ]
 }
 
 export const InfoDataTwo = {
@@ -62,7 +79,14 @@ export const InfoDataTwo = {
   path: "",
   image: susu,
   reverse: false, // image on the left or right
-  delay: 300
+  delay: 300,
+  services: [
+    {
+      id: 1,
+      title: '美体 / SPA',
+      path: '/makeup'
+    }
+  ]
 }
 
 export const InfoDataThree = {
@@ -92,5 +116,12 @@ export const InfoDataThree = {
   path: "/services/microblading",
   image: zoe,
   reverse: true, // image on the left or right
-  delay: 300
+  delay: 300,
+  services: [
+    {
+      id: 1,
+      title: '纹绣',
+      path: '/microblading'
+    }
+  ]
 }
