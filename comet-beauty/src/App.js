@@ -13,6 +13,7 @@ import Contact from './pages/ContactPage';
 import ServicePage from './pages/ServicePage';
 import GalleryPage from './pages/GalleryPage';
 import MakeupPage from './pages/MakeupPage';
+import MicrobladingPage from './pages/MicrobladingPage';
 
 function App() {
   // func for menu bar
@@ -45,6 +46,7 @@ function App() {
         <Route path='/gallery' exact element={<GalleryPage />} />
         <Route path='/contact' exact element={<Contact />} />
         <Route path='/makeup' exact element={<MakeupPage />} />
+        <Route path='/microblading' exact element={<MicrobladingPage />} />
       </Routes>
       <Footer />
     </>

@@ -1,4 +1,24 @@
-import { susu } from '../../assets/images'
+import { susu, zoe } from '../../assets/images'
+import styled, { css } from 'styled-components/macro'
+import { FaInstagram } from 'react-icons/fa'
+import { IoLogoWechat } from "react-icons/io5";
+
+const Icons = css`
+  font-size: clamp(1rem, 6vw, 2rem);
+  margin-right: 0.6rem;
+  margin-top: 0.6rem;
+  color: #5C8374;
+`
+
+const Instagram = styled(FaInstagram)`
+  ${Icons};
+  vertical-align: -6px;
+`
+
+const WeChat = styled(IoLogoWechat)`
+  ${Icons};
+  vertical-align: -6px;
+`
 
 export const ContactInfo = [
     {
@@ -9,15 +29,18 @@ export const ContactInfo = [
       contact: [
         {
           id: 1,
-          "contact": "WX: susuwx",
+          type: "WX",
+          value: "susuwx",
         },
         {
           id: 2,
-          "contact": "INS: susuins",
+          type: "INS",
+          value: "susuins",
         },
         {
           id: 3,
-          "contact": "XHS: susuxhs",
+          type: "XHS",
+          value: "susuxhs",
         },
       // {
       //   id: 4,
@@ -33,15 +56,18 @@ export const ContactInfo = [
       contact: [
         {
           id: 1,
-          "contact": "WX: susuwx",
+          type: "WX",
+          value: "susuwx",
         },
         {
           id: 2,
-          "contact": "INS: susuins",
+          type: "INS",
+          value: "susuins",
         },
         {
           id: 3,
-          "contact": "XHS: susuxhs",
+          type: "XHS",
+          value: "susuxhs",
         },
       // {
       //   id: 4,
@@ -52,20 +78,23 @@ export const ContactInfo = [
     {
       id: 3,
       name: "Zoe",
-      avatar: susu,
+      avatar: zoe,
       alt: "zoe_image",
       contact: [
         {
           id: 1,
-          "contact": "WX: Zoe33su",
+          type: "WX",
+          value: "Zoe33su",
         },
         {
           id: 2,
-          "contact": "INS: byzoesu",
+          type: "INS",
+          value: "byzoesu",
         },
         {
           id: 3,
-          "contact": "XHS: BYZOESU (4756625893)",
+          type: "XHS",
+          value:"BYZOESU (4756625893)",
         },
         // {
         //   id: 4,

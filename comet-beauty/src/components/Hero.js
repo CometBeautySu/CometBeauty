@@ -57,7 +57,9 @@ function Hero() {
       />
       <StyledButton 
         to='/contact' 
-        primary='true' 
+        primary='true'
+        big
+        round
         data-aos='fade-up' 
         data-aos-duration='600' 
       >Contact Us</StyledButton>
