@@ -1,24 +1,4 @@
 import { susu, zoe } from '../../assets/images'
-import styled, { css } from 'styled-components/macro'
-import { FaInstagram } from 'react-icons/fa'
-import { IoLogoWechat } from "react-icons/io5";
-
-const Icons = css`
-  font-size: clamp(1rem, 6vw, 2rem);
-  margin-right: 0.6rem;
-  margin-top: 0.6rem;
-  color: #5C8374;
-`
-
-const Instagram = styled(FaInstagram)`
-  ${Icons};
-  vertical-align: -6px;
-`
-
-const WeChat = styled(IoLogoWechat)`
-  ${Icons};
-  vertical-align: -6px;
-`
 
 export const ContactInfo = [
     {
@@ -30,18 +10,28 @@ export const ContactInfo = [
         {
           id: 1,
           type: "WX",
-          value: "susuwx",
+          value: "cometbeauty",
         },
         {
           id: 2,
           type: "INS",
-          value: "susuins",
+          value: "seattle.susubeauty_",
         },
         {
           id: 3,
           type: "XHS",
-          value: "susuxhs",
+          value: "西雅图苏苏化妆师美甲美睫",
         },
+        {
+          id: 4,
+          type: "XHS",
+          value: "西雅图化妆师苏苏",
+        },
+        // {
+        //   id: 5,
+        //   type: "EMAIL",
+        //   value: "comet.beauty.studio@gmail.com",
+        // },
       // {
       //   id: 4,
       //   qrCode: qrCode,
@@ -69,6 +59,11 @@ export const ContactInfo = [
           type: "XHS",
           value: "susuxhs",
         },
+        // {
+        //   id: 4,
+        //   type: "EMAIL",
+        //   value: "comet.beauty.studio@gmail.com",
+        // },
       // {
       //   id: 4,
       //   qrCode: qrCode,
@@ -96,6 +91,11 @@ export const ContactInfo = [
           type: "XHS",
           value:"BYZOESU (4756625893)",
         },
+        // {
+        //   id: 4,
+        //   type: "EMAIL",
+        //   value: "sutianhui408@gmail.com",
+        // },
         // {
         //   id: 4,
         //   qrCode: qrCode,

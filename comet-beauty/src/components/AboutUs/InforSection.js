@@ -150,6 +150,7 @@ const InforSection = ({
   heading, 
   paragraphOne, 
   paragraphTwo, 
+  paragraphThree,
   buttonLabel, 
   reverse, 
   image,
@@ -185,6 +186,9 @@ const InforSection = ({
           <h1>{heading}</h1>
           <h3>{paragraphOne}</h3>
           <p>{paragraphTwo}</p>
+          {/* {paragraphThree && paragraphThree.map((item, id) => (
+            <p key={id}>{item}</p>
+          ))} */}
           <ServicesLink>
           <p>View More: </p>
             {

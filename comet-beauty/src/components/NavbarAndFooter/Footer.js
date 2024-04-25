@@ -108,7 +108,7 @@ const Footer = () => {
             <Links>
               <StyledLink to="/" onClick={scrollToTop}>Home</StyledLink>
               <p>|</p>
-              <StyledLink to="/services">Services</StyledLink>
+              <StyledLink to="/#services">Services</StyledLink>
               <p>|</p>
               <StyledLink to="/contact">Contact Us</StyledLink>
             </Links>

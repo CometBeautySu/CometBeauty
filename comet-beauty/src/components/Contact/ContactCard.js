@@ -6,12 +6,12 @@ import { xhsIcon } from '../../assets/images/xhsIcon';
 
 const InfoCards = styled.div`
   max-width: 1200px;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
   display: flex;
   flex-direction: row;
   border: 1px solid black;
   padding: 1rem 1rem;
-  border-radius: 40px;
+  border-radius: 30px;
 
   h2 {
     font-weight: 300;
@@ -22,7 +22,7 @@ const InfoCards = styled.div`
 `
 
 const Avatar = styled.img`
-  margin: auto;
+  margin: auto 0;
   height: 30vw; /* 或者您可以使用固定高度/宽度值 */
   width: 30vw; /* 使用vw单位可以确保在不同尺寸的屏幕上保持一致的比例 */
   border-radius: 50%; /* 将头像变为原型 */
@@ -33,10 +33,11 @@ const Avatar = styled.img`
 `
 
 const Content = styled.div`
-  margin: auto;
+  flex: 1;
+  margin-left: 34px;
   line-height: 23px;
-  max-width: 110px;
-  min-width: 110px;
+  // max-width: 160px;
+  // min-width: 110px;
 
   p {
     font-size: 0.85rem;
@@ -66,11 +67,11 @@ const XHS = styled(xhsIcon)`
 const ContactCard = ( props ) => {
   return (
     <InfoCards
-      data-aos='zoom-out'
-      data-aod-duration='1000'
-      data-aos-once='true'
-      data-aos-delay='300'
-      data-aos-anchor-placement='center bottom'
+      // data-aos='zoom-out'
+      // data-aod-duration='1000'
+      // data-aos-once='true'
+      // data-aos-delay='300'
+      // data-aos-anchor-placement='center bottom'
     >
       <Avatar src={props.avatar} alt={props.alt}></Avatar>
       <Content>

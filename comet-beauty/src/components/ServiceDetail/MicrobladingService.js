@@ -46,23 +46,24 @@ const ContactContainer = styled.div`
 `
 
 const Contact = styled.div`
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
-  p {
-    line-height: 3em;
-    margin: auto;
-    text-align: left;
-  }
+  // p {
+  //   line-height: 3em;
+  //   margin: auto;
+  //   text-align: left;
+  // }
 
-  img {
-    padding: 8px;
-    width: 60%;
-    max-width: 300px;
-    height: 100%;
-    margin: auto;
-    object-fit: cover;
-  }
+  // img {
+  //   padding: 8px;
+  //   width: 60%;
+  //   max-width: 300px;
+  //   height: 100%;
+  //   margin: auto;
+  //   object-fit: cover;
+  // }
+  margin: 20px;
 `
 
 const MicrobladingService = () => {
@@ -94,12 +95,14 @@ const MicrobladingService = () => {
         ))
       }
       <h1>联系方式</h1>
-      <ContactCard
-        name={ZoeContactInfo.name}
-        avatar={ZoeContactInfo.avatar}
-        alt={ZoeContactInfo.alt}
-        contact={ZoeContactInfo.contact}
-      />
+      <Contact>
+        <ContactCard
+          name={ZoeContactInfo.name}
+          avatar={ZoeContactInfo.avatar}
+          alt={ZoeContactInfo.alt}
+          contact={ZoeContactInfo.contact}
+        />
+      </Contact>
     </ServiceDetailContainer>
   )
 }

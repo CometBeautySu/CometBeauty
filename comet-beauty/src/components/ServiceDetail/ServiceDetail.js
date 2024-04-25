@@ -94,73 +94,209 @@ const Contact = styled.div`
 	//     margin: auto;
 	//     object-fit: cover;
 	// }
+
+	margin: 20px;
+
 	h1 {
 		margin-top: 1.2rem;
 	}
 `
 
+const ImageCardContainer = styled.div`
+	
+
+
+`
+
+const ImageCard = styled.div`
+	position: relative;
+	overflow: hidden;
+	background-color: #F2DAD7;
+	width: 30%;
+	height: 100%;
+
+	img {
+		position: absolute;
+		opacity: 0.9;
+		object-fit: cover;
+	}
+	p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+	}
+
+	&:hover {
+		transform: translateY(0%);
+	}
+`
+
+const ButtonWrap = styled.div`
+  background: rgba(darken($primary, 10%), .9);
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  // transition: $ease;
+  button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid $white;
+    color: $white;
+    text-transform: uppercase;
+    padding: 10px;
+    &:hover {
+      transition: $ease;
+      background: $white;
+      color: $secondary;
+      transform: scale(1.05);
+    }
+  }
+`
+
+// const IMG = styled.img`
+
+// `
+
+const ProjectCard = styled.div`
+  position: relative;
+  background: black; // 使用主题的 primary 颜色
+  overflow: hidden;
+  width: 30%;
+  height: 300px; // 可以根据需要调整高度
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+
+  p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+  }
+
+  &:hover {
+    transform: translateY(0);
+  }
+`;
+
+const GridOverlay = styled.div`
+  background: rgba(darken(black, 10%), .9);; // 假设 theme 中有 primaryDark 颜色
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;; // 使用主题的 ease 过渡效果
+
+  &:hover {
+    transform: translateY(0);
+  }
+
+  button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid white; // 使用主题的 white 颜色
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+
+    &:hover {
+      background: white;
+      color: #D1A39E; // 使用主题的 secondary 颜色
+      transform: scale(1.05);
+    }
+  }
+`;
+
 const ServiceDetail = () => {
 	const SusuContactInfo = ContactInfo[0];
   return (
-    <div>
-      <ServiceDetailContainer>
-        <ServiceDetailheader
-            data-aos='zoom-out'
-            data-aod-duration='1000'
-            data-aos-once='true'
-            data-aos-delay='300'
-            data-aos-anchor-placement='center bottom'
-        >
-            <img src={plant}/>
-            <h1>新娘妆发 / 写真妆发</h1>
-        </ServiceDetailheader>
-        <ServiceDetailWrapper>
-            <h1 data-aos='fade-left' data-aos-duration='600' data-aos-once='true'>Overview</h1>
-            <p data-aos='fade-left' data-aos-duration='600' data-aos-once='true'>在我们的工作室，我们擅长亚洲风格的化妆和发型设计，专注于令人惊叹的中国新娘造型。 我们的专业知识确保每位新娘在特殊的日子里散发出自然之美，将传统优雅与现代风格融为一体。 让我们通过专业服务提升您的新娘风格。
+		<ServiceDetailContainer>
+			<ServiceDetailheader
+					data-aos='zoom-out'
+					data-aod-duration='1000'
+					data-aos-once='true'
+					data-aos-delay='300'
+					data-aos-anchor-placement='center bottom'
+			>
+					<img src={plant}/>
+					<h1>新娘妆发 / 写真妆发</h1>
+			</ServiceDetailheader>
+			<ServiceDetailWrapper>
+					<h1 data-aos='fade-left' data-aos-duration='600' data-aos-once='true'>Overview</h1>
+					<p data-aos='fade-left' data-aos-duration='600' data-aos-once='true'>在我们的工作室，我们擅长亚洲风格的化妆和发型设计，专注于令人惊叹的中国新娘造型。 我们的专业知识确保每位新娘在特殊的日子里散发出自然之美，将传统优雅与现代风格融为一体。 让我们通过专业服务提升您的新娘风格。
 
 我们为婚礼新娘、登记新娘和新娘拍摄提供化妆和发型设计服务。 此外，我们还满足生日化妆和各种活动发型设计的需求。</p>
-            <img src={work} alt='工作照' data-aos='fade-right' data-aos-duration='600' data-aos-once='true'/>
-        </ServiceDetailWrapper>
-    
-        <ServiceDetailWrapper>
-            <h1 data-aos='fade-left' data-aos-duration='600' data-aos-once='true'>How is that work</h1>
-            <p data-aos='fade-right' data-aos-duration='600' data-aos-once='true'>
-                与化妆师susu预约后，请素颜到店。期间会商讨妆发风格，婚礼时间，为您打造属于您的最美造型
-                <br />
-                时长：2hrs (超出时长按 $20 / 分钟计算)
-            </p>
-        </ServiceDetailWrapper>
+					<img src={work} alt='工作照' data-aos='fade-right' data-aos-duration='600' data-aos-once='true'/>
+			</ServiceDetailWrapper>
+	
+			<ServiceDetailWrapper>
+					<h1 data-aos='fade-left' data-aos-duration='600' data-aos-once='true'>How is that work</h1>
+					<p data-aos='fade-right' data-aos-duration='600' data-aos-once='true'>
+							与化妆师susu预约后，请素颜到店。期间会商讨妆发风格，婚礼时间，为您打造属于您的最美造型
+							<br />
+							时长：2hrs (超出时长按 $20 / 分钟计算)
+					</p>
+			</ServiceDetailWrapper>
 
-        <hr />
-				<Contact>
-					<h1>联系方式</h1>
-					<ContactCard
-						name={SusuContactInfo.name}
-						avatar={SusuContactInfo.avatar}
-						alt={SusuContactInfo.alt}
-						contact={SusuContactInfo.contact}
-					/>
-				</Contact>
+			<hr />
+			<Contact>
+				<h1>联系方式</h1>
+				<ContactCard
+					name={SusuContactInfo.name}
+					avatar={SusuContactInfo.avatar}
+					alt={SusuContactInfo.alt}
+					contact={SusuContactInfo.contact}
+				/>
+			</Contact>
 
-        {/* <ContactContainer>
-            <h3 data-aos='fade-down' data-aos-duration='600' data-aos-once='true'>Contact Me</h3>
-            <Contact data-aos='fade-up' data-aos-duration='600' data-aos-once='true'>
-                <p>
-                    <WeChat />SUSUWX
-                    <br />
-                    <Instagram />SUSUINS
-                    <br />
-                    XHS: SUSUXHS
-                    <br />
-                </p>
-                <img src={qrCode} alt='qrCode'/>
-            </Contact>
-        </ContactContainer> */}
+			{/* <ContactContainer>
+					<h3 data-aos='fade-down' data-aos-duration='600' data-aos-once='true'>Contact Me</h3>
+					<Contact data-aos='fade-up' data-aos-duration='600' data-aos-once='true'>
+							<p>
+									<WeChat />SUSUWX
+									<br />
+									<Instagram />SUSUINS
+									<br />
+									XHS: SUSUXHS
+									<br />
+							</p>
+							<img src={qrCode} alt='qrCode'/>
+					</Contact>
+			</ContactContainer> */}
 
-        {/* <Gallery service={ServiceData}/> */}
-
-      </ServiceDetailContainer>
-    </div>
+			{/* <Gallery service={ServiceData}/> */}
+      {/* <ProjectCard>
+        <img src={plant} alt="Project Image" />
+        <p>Description here</p>
+        <GridOverlay>
+          <button>Learn More</button>
+        </GridOverlay>
+      </ProjectCard> */}
+		</ServiceDetailContainer>
   )
 }
 

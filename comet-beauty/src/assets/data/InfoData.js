@@ -3,8 +3,8 @@ import { susu, zoe, qrCode } from "../images";
 
 export const InfoData = {
   heading: "Susu",
-  paragraphOne: "Makeup Artist",
-  paragraphTwo: "My name is Susu and I'm a licensed makeup artist & esthetician. I specialize in bridal and special events makeup in the Rochester, NY area and I absolutely love this little corner of the world!",
+  paragraphOne: "化妆师",
+  paragraphTwo: "12届北京毛戈平形象造型学校毕业, 进修于北京东田造型设计班, 拥有专业大型T台后场化妆经验, 已有近100场婚礼跟妆经验, 专业日式美甲美睫师, 在西雅图婚礼跟妆已有8年时间。",
   contactInfo: [
     {
       id: 1,
@@ -55,8 +55,8 @@ export const InfoData = {
 
 export const InfoDataTwo = {
   heading: "Lifang Su",
-  paragraphOne: "Traditional Chinese Medicine Meridian Therapist",
-  paragraphTwo: "Harmonizing energy flow, a skilled Traditional Chinese Medicine Meridian Therapist fosters holistic wellness through ancient techniques.",
+  paragraphOne: "专业按摩师",
+  paragraphTwo: "20年经验。擅长肌肉深组织按摩和热石按摩，以及中式艾灸疗法, 重点关注客户健康，致力于提供舒缓疲劳、促进血液循环的按摩治疗。",
   contactInfo: [
     {
       id: 1,
