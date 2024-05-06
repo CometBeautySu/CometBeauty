@@ -91,6 +91,17 @@ const CardItemInfo = styled.div`
   }
 `
 
+const LearnMoreLink = styled(Link)`
+  display: block;
+  outline: none;
+  border: none;
+  text-decoration: 0.3px green wavy underline;
+  margin-top: 0.2rem;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+`
+
 const StyledButton = styled(Button)`
   background-color: #739072;
   min-width: 100px;
@@ -111,7 +122,7 @@ const CardItem = (props) => {
         data-aos-delay='300'
         data-aos-anchor-placement='center bottom'
       >
-        <CardItemLink to={props.path}>
+        <CardItemLink>
           <CardItemPicWrap>
             {/* <CardImage src={props.scr} alt="Images"/> */}
             <CardImage images={props.src}/>
@@ -119,6 +130,8 @@ const CardItem = (props) => {
           <CardItemInfo>
             <h5>{props.title}</h5>
             <h7>{props.detail}</h7>
+            <br/>
+            <LearnMoreLink to={props.path}>Learn More</LearnMoreLink>
             {/* <p>By: {props.artist}</p> */}
             {/* <StyledButton to={props.path}>了解更多</StyledButton> */}
           </CardItemInfo>
