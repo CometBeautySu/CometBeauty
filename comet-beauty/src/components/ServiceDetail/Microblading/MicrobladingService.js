@@ -2,11 +2,11 @@ import React from 'react'
 import styled, { css } from 'styled-components/macro'
 import { FaInstagram } from 'react-icons/fa'
 import { IoLogoWechat } from "react-icons/io5";
-import { qrCode, plant, work} from '../../assets/images'
+import { qrCode, plant, work} from '../../../assets/images'
 import MicrobladingCard from './MicrobladingCard';
-import { ZoeServiceData } from '../../assets/data/ServiceData'
-import ContactCard from '../Contact/ContactCard'
-import { ContactInfo } from '../../assets/data/ContactInfos'
+import { ZoeServiceData } from '../../../assets/data/ServiceData';
+import ContactCard from '../../Contact/ContactCard'
+import { ContactInfo } from '../../../assets/data/ContactInfos'
 
 
 const ServiceDetailContainer = styled.section`

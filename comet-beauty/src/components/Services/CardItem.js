@@ -122,7 +122,7 @@ const CardItem = (props) => {
         data-aos-delay='300'
         data-aos-anchor-placement='center bottom'
       >
-        <CardItemLink>
+        <CardItemLink to={props.path}>
           <CardItemPicWrap>
             {/* <CardImage src={props.scr} alt="Images"/> */}
             <CardImage images={props.src}/>

@@ -65,7 +65,7 @@ const Cards = ( props ) => {
         <CardsContainer>
           <CardsWrapper>
             <CardsItems>
-              {serviceData.slice(0, 2).map(item => (
+              {serviceData.slice(0, 3).map(item => (
                 <CardItem 
                   key={item.id} 
                   title={item.title} 
@@ -79,7 +79,7 @@ const Cards = ( props ) => {
               ))}
             </CardsItems>
             <CardsItems>
-              {serviceData.slice(2, 5).map(item => (
+              {serviceData.slice(3, 6).map(item => (
                 <CardItem 
                   key={item.id} 
                   title={item.title} 

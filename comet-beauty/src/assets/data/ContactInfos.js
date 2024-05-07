@@ -40,7 +40,7 @@ export const ContactInfo = [
     },
     {
       id: 2,
-      name: "Mary",
+      name: "Mary Su",
       avatar: susu,
       alt: "susu_image",
       contact: [
@@ -72,7 +72,7 @@ export const ContactInfo = [
     },
     {
       id: 3,
-      name: "Zoe",
+      name: "Zoe Su",
       avatar: zoe,
       alt: "zoe_image",
       contact: [
@@ -89,8 +89,13 @@ export const ContactInfo = [
         {
           id: 3,
           type: "XHS",
-          value:"BYZOESU (4756625893)",
+          value:"BYZOESU",
         },
+        {
+          id: 4,
+          type: "XHS",
+          value: "ID: 4756625893",
+        }
         // {
         //   id: 4,
         //   type: "EMAIL",
