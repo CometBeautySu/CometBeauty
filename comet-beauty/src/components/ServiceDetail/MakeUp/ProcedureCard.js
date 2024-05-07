@@ -55,7 +55,6 @@ const ProcedureTitle = styled.div`
 `
 
 const ProcedureCard = (props) => {
-  console.log(props)
   return (
     <ProcedureContainer
       data-aos="fade-right"

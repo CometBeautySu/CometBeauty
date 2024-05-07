@@ -70,7 +70,6 @@ const ContactForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    console.log(name, value);
   }
   
 // Jojo
@@ -87,7 +86,6 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    console.log(form)
 
     let serviceId ='';
     let templateId = '';

@@ -140,8 +140,6 @@ const Memberships = () => {
     
         fetchMemberships();
     }, []);
-
-    console.log(memberships);
     
     if (isLoading) {
         return (

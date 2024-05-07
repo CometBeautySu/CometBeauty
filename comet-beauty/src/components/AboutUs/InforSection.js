@@ -159,9 +159,6 @@ const InforSection = ({
   contactInfo,
   services
 }) => {
-
-  console.log(services);
-
   return (
     <>
     <Section>

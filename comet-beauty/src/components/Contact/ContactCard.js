@@ -67,11 +67,11 @@ const XHS = styled(xhsIcon)`
 const ContactCard = ( props ) => {
   return (
     <InfoCards
-      // data-aos='zoom-out'
-      // data-aod-duration='1000'
-      // data-aos-once='true'
-      // data-aos-delay='300'
-      // data-aos-anchor-placement='center bottom'
+      data-aos='zoom-out'
+      data-aod-duration='1000'
+      data-aos-once='true'
+      data-aos-delay='300'
+      data-aos-anchor-placement='center bottom'
     >
       <Avatar src={props.avatar} alt={props.alt}></Avatar>
       <Content>
