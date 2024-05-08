@@ -1,7 +1,7 @@
 import { 
         nail, massage, bridal_makeup, eyebrow,
         main_microblading1, main_microblading2,
-        main_microblading3 } from "../images";
+        main_microblading3, clothe1 } from "../images";
 
 
 export const ServiceData = [
@@ -137,7 +137,7 @@ export const ServiceData = [
         // image: massage,
         images: [
             {
-                "src": bridal_makeup,
+                "src": clothe1,
                 "alt": "bridal makeup"
             },
             {

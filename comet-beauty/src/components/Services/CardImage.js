@@ -21,7 +21,7 @@ const Slide = styled.img`
   height: 100%;
   max-height: 100%;
   object-fit: cover;
-  object-position: 0% 60%;
+  object-position: 0% 20%;
   transition: all 0.2s linear;
 
   &:hover {

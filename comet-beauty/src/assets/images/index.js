@@ -14,7 +14,8 @@ import background1 from './background1.jpg';
 import main_microblading1 from './main_microblading1.jpg';
 import main_microblading2 from './main_microblading2.png';
 import main_microblading3 from './main_microblading3.jpg';
-
+import wedding2 from './wedding2.jpg';
+import clothe1 from './clothe1.jpg';
 
 
 export {
@@ -34,4 +35,6 @@ export {
     main_microblading1,
     main_microblading2,
     main_microblading3,
+    wedding2,
+    clothe1,
 }

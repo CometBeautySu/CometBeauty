@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button'
-import ImageOne from '../../assets/images/image1.jpg'
+// import ImageOne from '../../assets/images/image1.jpg'
 import { ContactInfo } from '../../assets/data/ContactInfos'
 import ContactCard from './ContactCard'
 import ContactForm from './ContactForm'

@@ -78,7 +78,7 @@ const MicrobladingService = () => {
           data-aos-anchor-placement='center bottom'
       >
           <img src={plant}/>
-          <h1>Microblading</h1>
+          <h1>半永久纹绣</h1>
       </ServiceDetailheader>
       {
         ZoeServiceData.map((item) => (

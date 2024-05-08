@@ -5,6 +5,8 @@ import ContactCard from '../../Contact/ContactCard'
 import { ContactInfo } from '../../../assets/data/ContactInfos'
 import { SusuServiceData } from '../../../assets/data/ServiceData'
 import ProcedureCard from './ProcedureCard'
+import Explore from '../../Explore.js'
+import { GalleryData } from '../../../assets/data/GalleryData.js'
 
 const ServiceDetailContainer = styled.section`
 	width: 100%;
@@ -133,6 +135,11 @@ const MakeUp = () => {
             <ProcedureCard key={id} id={id} title={item.title} detail={item.detail} />
           ))
         }
+        <br />
+        <hr />
+        <h2 data-aos='fade-right' data-aos-duration='600' data-aos-once='true'>发现美丽变化</h2>
+        <Explore images={GalleryData} label="MakeUp"/>
+        <hr />
       </ServiceDetailWrapper>
     
 			<Contact

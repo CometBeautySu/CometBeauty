@@ -39,7 +39,7 @@ const CardItemPicWrap = styled.figure`
   }
 
   @media screen and (min-width: 485px) {
-    padding-top: 78%;
+    padding-top: 100%;
   }
 `
 
