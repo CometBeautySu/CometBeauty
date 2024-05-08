@@ -1,4 +1,4 @@
-import { susu, zoe } from '../../assets/images'
+import { susu, zoe, mary } from '../../assets/images'
 
 export const ContactInfo = [
     {
@@ -41,23 +41,18 @@ export const ContactInfo = [
     {
       id: 2,
       name: "Mary Su",
-      avatar: susu,
-      alt: "susu_image",
+      avatar: mary,
+      alt: "mary_image",
       contact: [
         {
           id: 1,
           type: "WX",
-          value: "susuwx",
+          value: "xiaofangsu123",
         },
         {
           id: 2,
           type: "INS",
-          value: "susuins",
-        },
-        {
-          id: 3,
-          type: "XHS",
-          value: "susuxhs",
+          value: "seattle.susubeauty_",
         },
         // {
         //   id: 4,

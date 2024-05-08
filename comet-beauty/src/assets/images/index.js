@@ -16,7 +16,7 @@ import main_microblading2 from './main_microblading2.png';
 import main_microblading3 from './main_microblading3.jpg';
 import wedding2 from './wedding2.jpg';
 import clothe1 from './clothe1.jpg';
-
+import mary from './mary.jpg';
 
 export {
     bridal_makeup,
@@ -37,4 +37,5 @@ export {
     main_microblading3,
     wedding2,
     clothe1,
+    mary,
 }

@@ -95,7 +95,7 @@ const LearnMoreLink = styled(Link)`
   display: block;
   outline: none;
   border: none;
-  text-decoration: 0.3px green wavy underline;
+  text-decoration: 0.3px green underline;
   margin-top: 0.2rem;
   padding: 0;
   color: black;

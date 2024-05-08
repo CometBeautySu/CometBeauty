@@ -138,7 +138,7 @@ const ServicesLink = styled.div`
 const ServiceLink = styled(Link)`
   outline: none;
   border: none;
-  text-decoration: green wavy underline;
+  text-decoration: green underline;
   margin-top: 0.2rem;
   margin-left: 10px;
   padding: 0;
