@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Features = () => {
   return (
-    <Sections>
+    <Sections id='contact'>
       <Container>
         {
           ContactInfo.map(item => (

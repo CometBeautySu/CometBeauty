@@ -35,7 +35,7 @@ export const ServiceData = [
         detail: "运用色彩群掌握适合自己的发色、妆容、服饰色，提升个人魅力，节省时间，避免浪费。科学使用色彩，让肤色更加光泽透明。",
         // detail: "Learning makeup is about pleasing oneself and becoming more beautiful. The makeup course consists of one-on-one teaching, covering both theoretical knowledge and practical application. It consists of 6 sessions, each lasting 1.5 hours.",
         artist: "Susu",
-        path: "/makeup",
+        path: "/makeup/#makeup",
         label: "MakeUp",
         images: [
             {
@@ -58,7 +58,7 @@ export const ServiceData = [
         title: "半永久纹绣",
         detail: "打造全脸幼态自然感定妆 / 温柔风纯手工微针雾眉 / 野生感妈生线条眉 / 灵气有神自然美瞳线",
         artist: "Zoe Su",
-        path: "/microblading",
+        path: "/microblading/#microblading",
         label: "Facial",
         // image: eyebrow,
         images: [

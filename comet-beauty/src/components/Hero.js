@@ -4,38 +4,49 @@ import { logoImage, background1 } from '../assets/images';
 import { Button } from './Button'
 import { motion, AnimatePresence } from 'framer-motion'
 
-
 const HeroSection = styled.div`
   height: 100vh;
   background-image: url(${background1});
-  background-size: cover; // 让背景图片填充整个容器并保持宽高比例
-  background-position: left; // 可选：将背景图片居中
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 0 20px;
 
   @media screen and (min-width: 650px) {
     height: 100vh;
   }
 `
 
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const LogoImage = styled.img`
-  width: 40%;
-  height: 50%;
+  max-width: 100%;
+  width: 65%;
+  height: auto;
   object-fit: cover;
   border-radius: 10%;
-  margin-top: 12%;
+  margin: auto;
 
   @media screen and (max-width: 768px) {
-    margin-top: 50%;
-    width: 280px;
-    height: 280px;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 70%;
+    margin-top: 10px;
   }
 `
 
 const StyledButton = styled(Button)`
-  margin-top: 5%;
+  margin-top: 6rem;
   &:hover,
   &:active {
       background-color: #404731;
@@ -43,27 +54,33 @@ const StyledButton = styled(Button)`
   z-index: 10;
 
   @media screen and (max-width: 768px) {
-    margin-top: 30%;
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 5rem;
   }
 `
 
 function Hero() {
   return (
     <HeroSection>
-      <LogoImage 
-        src={logoImage} 
-        alt='logoImage' 
-        data-aos='fade-down' 
-        data-aos-duration='600'
-      />
-      <StyledButton 
-        to='/contact' 
-        primary='true'
-        big
-        round
-        data-aos='fade-up' 
-        data-aos-duration='600' 
-      >Contact Us</StyledButton>
+      <ContentContainer>
+        <LogoImage 
+          src={logoImage} 
+          alt='logoImage' 
+          data-aos='fade-down' 
+          data-aos-duration='600'
+        />
+        <StyledButton 
+          to='/contact' 
+          primary='true'
+          big
+          round
+          data-aos='fade-down' 
+          data-aos-duration='600'
+        >Contact Us</StyledButton>
+      </ContentContainer>
     </HeroSection>
   )
 }

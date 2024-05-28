@@ -69,7 +69,7 @@ const Contact = styled.div`
 const MicrobladingService = () => {
   const ZoeContactInfo = ContactInfo[2];
   return (
-    <ServiceDetailContainer>
+    <ServiceDetailContainer id='microblading'>
       <ServiceDetailheader
           data-aos='zoom-out'
           data-aod-duration='1000'

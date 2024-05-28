@@ -169,7 +169,7 @@ const Gallery = ( props ) => {
   }
   
   return(
-    <GallerySection>
+    <GallerySection id='gallery'>
       <GalleryWrapper>
         <FilterItem>
           <ul>

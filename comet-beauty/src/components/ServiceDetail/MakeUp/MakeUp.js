@@ -90,7 +90,7 @@ const MakeUp = () => {
   const SusuMakeUpData = SusuServiceData[0];
   const SusuMakeUpProcedure = SusuServiceData[0].procedure;
   return (
-    <ServiceDetailContainer>
+    <ServiceDetailContainer id='makeup'>
       <ServiceDetailheader
         data-aos='zoom-out'
         data-aod-duration='1000'

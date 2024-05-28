@@ -110,7 +110,7 @@ const Footer = () => {
               <p>|</p>
               <StyledLink to="/#services">Services</StyledLink>
               <p>|</p>
-              <StyledLink to="/contact">Contact Us</StyledLink>
+              <StyledLink to="/contact/#contact">Contact Us</StyledLink>
             </Links>
           </FooterInfo>
         </FooterTop>
